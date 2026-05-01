@@ -35,8 +35,36 @@ export function Pricing() {
             </a>
           </section>
 
+          <section className="pricing__phase pricing__phase--single" aria-label="単回">
+            <p className="pricing__phase-step">2. 単回</p>
+            <div className="pricing__sub-grid">
+              <div className="pricing__card pricing__card--standard">
+                <p className="pricing__block-title">通常メニュー（単回）</p>
+                <div className="pricing__row">
+                  <p className="pricing__name">スタンダード</p>
+                  <p className="pricing__amount">4,900円</p>
+                </div>
+                <p className="pricing__subcaption lp-caption">まずは様子を見たい方へ</p>
+                <ul className="pricing__course-spec">
+                  <li>LED照射 8分×2セット + トリートメント</li>
+                </ul>
+                <div className="pricing__option">
+                  <p className="pricing__option-title">プレミアムオプション</p>
+                  <div className="pricing__row pricing__row--option">
+                    <p className="pricing__name">追加料金</p>
+                    <p className="pricing__amount">+1,600円</p>
+                  </div>
+                  <ul className="pricing__premium-detail">
+                    <li>LED照射 10分×2セット + クレンジング + 結晶新生トリートメント</li>
+                    <li>溶液濃度2倍配合で、より変化を感じやすくなっています。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section className="pricing__phase pricing__phase--main" aria-label="回数券（メイン表示）">
-            <p className="pricing__phase-step">2. 回数券（メイン表示）</p>
+            <p className="pricing__phase-step">3. 回数券（メイン表示）</p>
 
             <div className="pricing__card pricing__card--ticket">
               <p className="pricing__badge">一番人気</p>
@@ -45,19 +73,19 @@ export function Pricing() {
               <ul className="pricing__vertical-list">
                 <li className="pricing__line-item">
                   <span className="pricing__name">4回</span>
+                  <span className="pricing__total-price">14,000円</span>
                   <span className="pricing__per-price">1回あたり 3,500円</span>
-                  <span className="pricing__total-price">合計 14,000円</span>
                 </li>
                 <li className="pricing__line-item">
                   <span className="pricing__name">8回</span>
+                  <span className="pricing__total-price">25,600円</span>
                   <span className="pricing__per-price">1回あたり 3,200円</span>
-                  <span className="pricing__total-price">合計 25,600円</span>
                 </li>
                 <li className="pricing__line-item pricing__line-item--featured">
                   <span className="pricing__name">12回</span>
                   <span className="pricing__item-badge">一番人気</span>
+                  <span className="pricing__total-price">33,600円</span>
                   <span className="pricing__per-price">1回あたり 2,800円</span>
-                  <span className="pricing__total-price">合計 33,600円</span>
                 </li>
               </ul>
               <div className="pricing__option">
@@ -74,41 +102,20 @@ export function Pricing() {
             </a>
           </section>
 
-          <section className="pricing__phase pricing__phase--single" aria-label="単回">
-            <p className="pricing__phase-step">3. 単回</p>
-            <div className="pricing__sub-grid">
-              <div className="pricing__card pricing__card--standard">
-                <p className="pricing__block-title">通常メニュー（単回）</p>
-                <div className="pricing__row">
-                  <p className="pricing__name">スタンダード</p>
-                  <p className="pricing__amount">4,900円</p>
-                </div>
-                <p className="pricing__subcaption lp-caption">まずは様子を見たい方へ</p>
-                <div className="pricing__option">
-                  <p className="pricing__option-title">プレミアムオプション</p>
-                  <div className="pricing__row pricing__row--option">
-                    <p className="pricing__name">追加料金</p>
-                    <p className="pricing__amount">+1,600円</p>
-                  </div>
-                </div>
+          <section className="pricing__phase pricing__phase--subscription" aria-label="月額プラン">
+            <p className="pricing__phase-step">4. 月額プラン（メンテナンス用）</p>
+            <div className="pricing__card pricing__card--subscription">
+              <p className="pricing__block-title">月額プラン（メンテナンス用）</p>
+              <div className="pricing__row">
+                <p className="pricing__name">月2回まで</p>
+                <p className="pricing__amount">5,900円</p>
               </div>
-
-              <div className="pricing__card pricing__card--subscription">
-                <p className="pricing__block-title">月額プラン（メンテナンス用）</p>
-                <div className="pricing__row">
-                  <p className="pricing__name">月2回まで</p>
-                  <p className="pricing__amount">5,900円</p>
-                </div>
-                <p className="pricing__subcaption lp-caption">白さ維持したい方向け。回数券を使い切った後の維持にもおすすめです。</p>
-              </div>
+              <p className="pricing__subcaption lp-caption">白さ維持したい方向け。回数券を使い切った後の維持にもおすすめです。</p>
             </div>
-            <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
-              LINEで空き状況と目安を確認する
-            </a>
           </section>
 
           <section className="pricing__phase pricing__phase--medical" aria-label="さらに白さを求める方向け（医療）">
-            <p className="pricing__phase-step">4. さらに白さを求める方向け（医療）</p>
+            <p className="pricing__phase-step">5. さらに白さを求める方向け（医療）</p>
             <div className="pricing__card pricing__card--medical">
               <p className="pricing__medical-title">さらに白さを求める方へ</p>
               <p className="pricing__subcaption lp-caption">美容で限界を感じた方へのご案内</p>
@@ -130,9 +137,6 @@ export function Pricing() {
                 <li>オンライン診療・医療用ジェル費用が別途必要です</li>
               </ul>
             </div>
-            <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
-              LINEで空き状況と目安を確認する
-            </a>
           </section>
         </div>
 

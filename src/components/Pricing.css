@@ -210,16 +210,18 @@
 
 .pricing__per-price {
   margin: 0.15rem 0 0;
-  font-size: clamp(1.1rem, 2.9vw, 1.5rem);
-  line-height: 1.2;
-  font-weight: 800;
-  color: #0f172a;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  font-weight: 500;
+  color: var(--color-muted);
 }
 
 .pricing__total-price {
   margin: 0;
-  font-size: 0.82rem;
-  color: var(--color-muted);
+  font-size: clamp(1.1rem, 2.9vw, 1.5rem);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #0f172a;
 }
 
 .pricing__option {
@@ -235,6 +237,24 @@
   font-size: 0.875rem;
   font-weight: var(--fw-heading);
   color: var(--color-text);
+}
+
+.pricing__course-spec {
+  margin: 0.45rem 0 0;
+  padding-left: 1.15em;
+  display: grid;
+  gap: 0.2rem;
+  color: #334155;
+  font-size: 0.82rem;
+}
+
+.pricing__premium-detail {
+  margin: 0.45rem 0 0;
+  padding-left: 1.15em;
+  display: grid;
+  gap: 0.2rem;
+  color: var(--color-muted);
+  font-size: 0.82rem;
 }
 
 .pricing__phase--single .pricing__amount {
