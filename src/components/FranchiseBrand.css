@@ -1,0 +1,41 @@
+.franchise-brand {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.franchise-brand__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 横長ロゴ：最大幅でサイズ調整 */
+.franchise-brand--lg {
+  max-width: min(92vw, 280px);
+}
+
+.franchise-brand--md {
+  max-width: min(88vw, 220px);
+}
+
+.franchise-brand--sm {
+  max-width: min(85vw, 168px);
+}
+
+/* 左寄せレイアウト用（店舗ブロックなど） */
+.franchise-brand--align-start {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* 店舗情報ブロック内：親幅に収める */
+.franchise-brand--store.franchise-brand--sm,
+.franchise-brand--store.franchise-brand--md,
+.franchise-brand--store.franchise-brand--lg {
+  max-width: 100%;
+}

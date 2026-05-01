@@ -1,0 +1,143 @@
+import { LINE_RESERVE_URL } from '../config/links';
+import './Pricing.css';
+
+export function Pricing() {
+  return (
+    <section className="pricing lp-section" aria-labelledby="price-title" id="price">
+      <div className="lp-section__inner">
+        <h2 className="lp-h2 lp-h2--split" id="price-title">
+          <span className="lp-h2__en" lang="en">
+            PRICE
+          </span>
+          <span className="lp-h2__ja">料金のご案内</span>
+        </h2>
+        <p className="pricing__lead lp-body">迷ったら上から順に。まず体験、次に回数券、最後に単回を比較してください。</p>
+
+        <div className="pricing__stack">
+          <section className="pricing__phase pricing__phase--entry" aria-label="初回体験（入口）">
+            <p className="pricing__phase-step">1. 初回体験（入口）</p>
+            <div className="pricing__card pricing__card--intro">
+              <p className="pricing__tag">初回限定 / 体験価格</p>
+              <div className="pricing__row">
+                <p className="pricing__name">初回体験</p>
+                <p className="pricing__amount pricing__amount--intro">
+                  <span className="pricing__was">3,900円</span>
+                  <span className="pricing__price-sep" aria-hidden="true">
+                    →
+                  </span>
+                  <span className="pricing__price-now">1,900円</span>
+                </p>
+              </div>
+              <p className="pricing__subcaption lp-caption">合わなければここで終了OK。まずは気軽に1回お試しください。</p>
+            </div>
+            <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
+              LINEで空き状況と目安を確認する
+            </a>
+          </section>
+
+          <section className="pricing__phase pricing__phase--main" aria-label="回数券（メイン表示）">
+            <p className="pricing__phase-step">2. 回数券（メイン表示）</p>
+
+            <div className="pricing__card pricing__card--ticket">
+              <p className="pricing__badge">一番人気</p>
+              <p className="pricing__block-title">回数券（スタンダード基準）</p>
+              <p className="pricing__subcaption lp-caption">しっかり変化を実感したい方へ</p>
+              <ul className="pricing__vertical-list">
+                <li className="pricing__line-item">
+                  <span className="pricing__name">4回</span>
+                  <span className="pricing__per-price">1回あたり 3,500円</span>
+                  <span className="pricing__total-price">合計 14,000円</span>
+                </li>
+                <li className="pricing__line-item">
+                  <span className="pricing__name">8回</span>
+                  <span className="pricing__per-price">1回あたり 3,200円</span>
+                  <span className="pricing__total-price">合計 25,600円</span>
+                </li>
+                <li className="pricing__line-item pricing__line-item--featured">
+                  <span className="pricing__name">12回</span>
+                  <span className="pricing__item-badge">一番人気</span>
+                  <span className="pricing__per-price">1回あたり 2,800円</span>
+                  <span className="pricing__total-price">合計 33,600円</span>
+                </li>
+              </ul>
+              <div className="pricing__option">
+                <p className="pricing__option-title">プレミアム追加（回数券利用時）</p>
+                <div className="pricing__row pricing__row--option">
+                  <p className="pricing__name">追加料金</p>
+                  <p className="pricing__amount">+1,200円／回</p>
+                </div>
+              </div>
+            </div>
+
+            <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
+              LINEで空き状況と目安を確認する
+            </a>
+          </section>
+
+          <section className="pricing__phase pricing__phase--single" aria-label="単回">
+            <p className="pricing__phase-step">3. 単回</p>
+            <div className="pricing__sub-grid">
+              <div className="pricing__card pricing__card--standard">
+                <p className="pricing__block-title">通常メニュー（単回）</p>
+                <div className="pricing__row">
+                  <p className="pricing__name">スタンダード</p>
+                  <p className="pricing__amount">4,900円</p>
+                </div>
+                <p className="pricing__subcaption lp-caption">まずは様子を見たい方へ</p>
+                <div className="pricing__option">
+                  <p className="pricing__option-title">プレミアムオプション</p>
+                  <div className="pricing__row pricing__row--option">
+                    <p className="pricing__name">追加料金</p>
+                    <p className="pricing__amount">+1,600円</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pricing__card pricing__card--subscription">
+                <p className="pricing__block-title">月額プラン（メンテナンス用）</p>
+                <div className="pricing__row">
+                  <p className="pricing__name">月2回まで</p>
+                  <p className="pricing__amount">5,900円</p>
+                </div>
+                <p className="pricing__subcaption lp-caption">白さ維持したい方向け。回数券を使い切った後の維持にもおすすめです。</p>
+              </div>
+            </div>
+            <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
+              LINEで空き状況と目安を確認する
+            </a>
+          </section>
+
+          <section className="pricing__phase pricing__phase--medical" aria-label="さらに白さを求める方向け（医療）">
+            <p className="pricing__phase-step">4. さらに白さを求める方向け（医療）</p>
+            <div className="pricing__card pricing__card--medical">
+              <p className="pricing__medical-title">さらに白さを求める方へ</p>
+              <p className="pricing__subcaption lp-caption">美容で限界を感じた方へのご案内</p>
+              <ul className="pricing__vertical-list">
+                <li className="pricing__line-item pricing__line-item--medical">
+                  <span className="pricing__name">医療ホワイトニング（単回）</span>
+                  <span className="pricing__amount">7,900円</span>
+                </li>
+              </ul>
+              <div className="pricing__medical-plan">
+                <p className="pricing__option-title">セットプラン</p>
+                <div className="pricing__row">
+                  <p className="pricing__name">医療3回コース</p>
+                  <p className="pricing__amount">18,000円</p>
+                </div>
+              </div>
+              <ul className="pricing__notes">
+                <li>医療機関との提携サービスです</li>
+                <li>オンライン診療・医療用ジェル費用が別途必要です</li>
+              </ul>
+            </div>
+            <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
+              LINEで空き状況と目安を確認する
+            </a>
+          </section>
+        </div>
+
+        <p className="pricing__closing lp-body u-measure">お客様の状態に合わせて最適なプランをご提案いたします</p>
+      </div>
+    </section>
+  );
+}

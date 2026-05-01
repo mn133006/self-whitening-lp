@@ -1,0 +1,307 @@
+.pricing__lead {
+  margin: 0 auto var(--space-24);
+  max-width: var(--text-measure);
+  text-align: center;
+}
+
+.pricing__stack {
+  display: grid;
+  gap: var(--space-24);
+}
+
+.pricing__phase {
+  padding: var(--space-24);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  background: #fff;
+  display: grid;
+  gap: var(--space-16);
+}
+
+.pricing__phase-step {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: var(--fw-heading);
+  color: var(--color-primary);
+  letter-spacing: 0.04em;
+}
+
+.pricing__phase--main {
+  background: linear-gradient(180deg, #f8fbff 0%, #fff 100%);
+}
+
+.pricing__phase--medical {
+  background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+}
+
+.pricing__phase--single {
+  background: #f8fafc;
+}
+
+.pricing__card {
+  margin: 0;
+  padding: 1.25rem;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  background: var(--color-base);
+}
+
+.pricing__card--intro {
+  background: var(--color-card-intro);
+  border-color: rgb(59 130 246 / 0.28);
+}
+
+.pricing__card--ticket {
+  border: 3px solid var(--color-primary);
+  box-shadow: 0 16px 32px rgb(59 130 246 / 0.26);
+  background: linear-gradient(160deg, rgb(219 234 254 / 1) 0%, rgb(239 246 255 / 1) 42%, rgb(255 255 255 / 1) 100%);
+}
+
+.pricing__card--subscription {
+  background: #f8fafc;
+  border-color: rgb(148 163 184 / 0.35);
+  box-shadow: none;
+}
+
+.pricing__card--standard {
+  background: #f3f4f6;
+  border-color: rgb(148 163 184 / 0.25);
+  box-shadow: none;
+}
+
+.pricing__card--medical {
+  border-color: rgb(148 163 184 / 0.4);
+  box-shadow: none;
+}
+
+.pricing__tag,
+.pricing__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  margin: 0 0 var(--space-8);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: var(--fw-heading);
+  line-height: 1.4;
+}
+
+.pricing__tag {
+  color: var(--color-primary);
+  background: rgb(255 255 255 / 0.75);
+  border: 1px solid rgb(59 130 246 / 0.3);
+}
+
+.pricing__badge {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.pricing__block-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  color: var(--color-text);
+}
+
+.pricing__medical-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  color: #0f172a;
+}
+
+.pricing__row {
+  margin-top: var(--space-8);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-16);
+}
+
+.pricing__row--option {
+  margin-top: 0;
+}
+
+.pricing__name {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  color: var(--color-text);
+}
+
+.pricing__amount {
+  margin: var(--space-8) 0 0;
+  font-size: clamp(1.125rem, 2.8vw, 1.45rem);
+  font-weight: 800;
+  line-height: var(--lh-heading);
+  color: var(--color-text);
+  text-align: right;
+}
+
+.pricing__amount--intro {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0.35em;
+}
+
+.pricing__was {
+  color: var(--color-muted);
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.pricing__price-sep {
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.pricing__price-now {
+  font-size: clamp(1.25rem, 3.2vw, 1.75rem);
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.pricing__subcaption {
+  margin: var(--space-8) 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.pricing__vertical-list {
+  list-style: none;
+  margin: var(--space-16) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-8);
+}
+
+.pricing__line-item {
+  margin: 0;
+  padding: var(--space-8) var(--space-16);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.pricing__line-item--featured {
+  border-color: rgb(59 130 246 / 0.45);
+  background: rgb(239 246 255 / 0.7);
+}
+
+.pricing__item-badge {
+  justify-self: start;
+  margin-top: 0.2rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: var(--fw-heading);
+  color: #1d4ed8;
+  background: rgb(191 219 254 / 0.8);
+}
+
+.pricing__per-price {
+  margin: 0.15rem 0 0;
+  font-size: clamp(1.1rem, 2.9vw, 1.5rem);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.pricing__total-price {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.pricing__option {
+  margin-top: var(--space-16);
+  padding: var(--space-16);
+  border: 1px dashed rgb(148 163 184 / 0.45);
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.pricing__option-title {
+  margin: 0 0 var(--space-8);
+  font-size: 0.875rem;
+  font-weight: var(--fw-heading);
+  color: var(--color-text);
+}
+
+.pricing__phase--single .pricing__amount {
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  color: #334155;
+}
+
+.pricing__phase--single .pricing__block-title {
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.pricing__sub-grid {
+  display: grid;
+  gap: var(--space-12);
+}
+
+.pricing__line-item--medical {
+  background: rgb(255 255 255 / 0.9);
+  border-color: rgb(148 163 184 / 0.4);
+}
+
+.pricing__medical-plan {
+  margin-top: var(--space-16);
+  padding: var(--space-16);
+  border-radius: 12px;
+  border: 1px solid rgb(59 130 246 / 0.25);
+  background: rgb(59 130 246 / 0.05);
+}
+
+.pricing__notes {
+  margin: var(--space-16) 0 0;
+  padding-left: 1.15em;
+  display: grid;
+  gap: 0.35rem;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  line-height: var(--lh-body);
+}
+
+.pricing__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  width: 100%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #60a5fa 0%, var(--color-primary) 50%, var(--color-primary-hover) 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: var(--fw-heading);
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 0.65rem 1rem;
+}
+
+.pricing__cta:hover {
+  filter: brightness(1.04);
+}
+
+.pricing__closing {
+  margin: var(--space-32) auto 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .pricing__sub-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

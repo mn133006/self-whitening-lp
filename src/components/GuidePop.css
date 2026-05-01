@@ -1,0 +1,27 @@
+.guide-pop__inner {
+  max-width: min(100%, 720px);
+}
+
+.guide-pop__card {
+  margin-top: var(--space-24);
+  padding: var(--space-16);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  background: var(--color-base);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.guide-pop__card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.guide-pop__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}

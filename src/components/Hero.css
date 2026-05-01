@@ -1,0 +1,155 @@
+.hero {
+  padding: var(--space-32) var(--section-pad-x) var(--space-24);
+  background: var(--color-base);
+}
+
+/* サロンロゴ：セクション左右パディングを打ち消して横幅いっぱい */
+.hero__logo-row {
+  margin: 0 calc(-1 * var(--section-pad-x)) var(--space-24);
+  width: calc(100% + 2 * var(--section-pad-x));
+  max-width: none;
+}
+
+.hero__logo-stack {
+  width: 100%;
+}
+
+.hero__logo-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero__logo {
+  display: block;
+  width: min(78vw, 420px);
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.hero__franchise-below {
+  width: min(70vw, 190px);
+  margin: 0.65rem 0 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.hero__franchise-below .franchise-brand {
+  margin: 0;
+  pointer-events: auto;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+}
+
+.hero__franchise-below .franchise-brand__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: none;
+}
+
+.hero__franchise-brand--hero.franchise-brand--md {
+  max-width: 100%;
+}
+
+.hero__inner {
+  max-width: 640px;
+  margin: 0 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ファーストビュー：キャッチ（最優先） */
+.hero__catch {
+  margin: 0 auto;
+  max-width: var(--heading-measure);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: clamp(1.65rem, 6.2vw, 2.05rem);
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  color: var(--color-text);
+  line-break: strict;
+}
+
+.hero__urgency {
+  margin: var(--space-16) auto 0;
+  max-width: var(--text-measure);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls);
+  color: var(--color-muted);
+  line-break: strict;
+}
+
+/* CTAブロック：周囲に余白、中央 */
+.hero__cta-wrap {
+  margin-top: var(--space-32);
+  padding: var(--space-32) 0 var(--space-24);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-16);
+  width: 100%;
+}
+
+.hero__reassure {
+  margin: 0;
+  width: 100%;
+  max-width: var(--text-measure);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls);
+  color: var(--color-muted);
+}
+
+.hero__reassure p {
+  margin: 0.12rem 0;
+}
+
+/* サブコピー：CTAの下、やや小さく */
+.hero__sub {
+  margin: var(--space-24) 0 0;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls);
+  color: var(--color-muted);
+}
+
+.hero__visual {
+  margin-top: var(--space-32);
+}
+
+.hero__visual-label {
+  margin: 0 0 var(--space-16);
+  text-align: center;
+  font-weight: var(--fw-heading);
+  letter-spacing: var(--ls);
+}
+
+.hero__cta-wrap .cta-btn {
+  width: 100%;
+  max-width: 100%;
+}

@@ -1,0 +1,59 @@
+.salon-diff__lead {
+  margin: 0 auto var(--space-24);
+  max-width: var(--text-measure);
+  text-align: center;
+}
+
+.salon-diff__lead strong {
+  font-weight: var(--fw-heading);
+}
+
+.salon-diff__points {
+  list-style: none;
+  margin: 0 0 var(--space-24);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+}
+
+.salon-diff__point {
+  margin: 0;
+  padding: 1.25rem;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  background: var(--color-base);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.salon-diff__point:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.salon-diff__point-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  color: var(--color-text);
+}
+
+.salon-diff__point-body {
+  margin: 0;
+}
+
+.salon-diff__close {
+  margin: 0;
+  text-align: center;
+}
+
+.salon-diff__close strong {
+  font-weight: var(--fw-heading);
+  color: var(--color-text);
+}

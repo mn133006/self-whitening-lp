@@ -1,0 +1,187 @@
+/* 安心材料として圧縮表示（メイン導線は CTA / FLOW） */
+.whitening-steps.lp-section {
+  padding: var(--space-24) var(--section-pad-x);
+}
+
+.whitening-steps__head {
+  max-width: min(100%, 400px);
+  margin: 0 auto;
+}
+
+.whitening-steps__lead {
+  margin: 0 auto 0.65rem;
+  max-width: min(100%, 22rem);
+  text-align: center;
+  line-break: strict;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+
+.whitening-steps__scroller {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--section-pad-x);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  margin-left: calc(-1 * var(--section-pad-x));
+  margin-right: calc(-1 * var(--section-pad-x));
+  width: calc(100% + 2 * var(--section-pad-x));
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+}
+
+.whitening-steps__scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.whitening-steps__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 var(--section-pad-x);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: var(--space-8);
+  width: max-content;
+  min-height: min-content;
+}
+
+.whitening-steps__card {
+  margin: 0;
+  padding: var(--space-16);
+  background: var(--color-base);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-8);
+  position: relative;
+  flex: 0 0 min(300px, calc(100vw - 2.25rem));
+  max-width: min(300px, calc(100vw - 2.25rem));
+  scroll-snap-align: center;
+  scroll-snap-stop: normal;
+}
+
+/* 画像エリア：固定高さでコンパクト化 */
+.whitening-steps__media {
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f3f4f6;
+  height: 140px;
+  position: relative;
+  --step-media-pad-y: 0.35rem;
+  --step-media-pad-x: 0.35rem;
+}
+
+.whitening-steps__media .image-placeholder {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(59 130 246 / 0.22);
+  width: 100%;
+  max-height: 100%;
+}
+
+.whitening-steps__media .whitening-steps__img {
+  position: absolute;
+  left: var(--step-media-pad-x);
+  right: var(--step-media-pad-x);
+  top: var(--step-media-pad-y);
+  bottom: var(--step-media-pad-y);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.whitening-steps__num {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: clamp(1.65rem, 7vw, 2.1rem);
+  font-weight: var(--fw-heading);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: rgb(59 130 246 / 0.35);
+  text-align: center;
+  user-select: none;
+}
+
+.whitening-steps__title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  color: var(--color-text);
+  text-align: center;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+
+.whitening-steps__body {
+  text-align: left;
+  padding: 0.15rem 0 0;
+  min-width: 0;
+}
+
+.whitening-steps__bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.whitening-steps__bullet {
+  margin: 0 0 0.3rem;
+  padding-left: 0.1em;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: var(--fw-body);
+  line-height: 1.55;
+  letter-spacing: var(--ls);
+  color: var(--color-primary);
+  line-break: strict;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.whitening-steps__bullet:last-child {
+  margin-bottom: 0;
+}
+
+.whitening-steps__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.45rem;
+  margin-top: 0.7rem;
+}
+
+.whitening-steps__dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgb(59 130 246 / 0.28);
+  cursor: pointer;
+}
+
+.whitening-steps__dot:hover,
+.whitening-steps__dot:focus-visible {
+  background: rgb(59 130 246 / 0.5);
+  outline: none;
+}
+
+.whitening-steps__dot--active {
+  background: var(--color-primary);
+}
+
+@media (min-width: 640px) {
+  .whitening-steps__card {
+    flex-basis: 300px;
+    max-width: 300px;
+  }
+}

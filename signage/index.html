@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLEAR ROUTINE | 店内デジタルサイネージ</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="signage" aria-live="off">
+      <header class="topbar">
+        <div class="brand">
+          <img src="../public/logo-clear-routine.png" alt="CLEAR ROUTINE" class="brand__logo" />
+          <p class="brand__name">CLEAR ROUTINE</p>
+        </div>
+        <p class="topbar__meta">店内モニター案内</p>
+      </header>
+
+      <section class="slides" id="slides">
+        <article class="slide is-active" data-slide>
+          <div class="slide__media slide__media--logo">
+            <img class="slide__logo-img" src="../public/logo-clear-routine.png" alt="CLEAR ROUTINE ロゴ" />
+            <img class="slide__sub-logo" src="../public/bihaku-whitening-logo.png" alt="美歯口ホワイトニング BIHAKU WHITENING" />
+          </div>
+          <div class="slide__content">
+            <p class="kicker">WELCOME</p>
+            <h1>口元ケアを、もっと身近に。</h1>
+            <p class="lead"><strong>CLEAR ROUTINE</strong></p>
+            <ul class="bullets">
+              <li>初回体験 ¥1,900</li>
+              <li>所要時間 目安30〜45分（初回は目安60分）</li>
+              <li>初めての方にもわかりやすいご案内</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="slide slide--guide-safe" data-slide>
+          <div class="slide__media slide__media--guide">
+            <img class="slide__guide-img" src="../public/whitening-pop-guide.png" alt="はじめての方向けガイドの案内画像" />
+          </div>
+          <div class="slide__content">
+            <p class="kicker">SELF WHITENING</p>
+            <h2>セルフホワイトニングとは</h2>
+            <p class="lead">歯の表面の着色汚れにアプローチし、本来の自然な明るさへ近づけるケアです。</p>
+            <ul class="bullets">
+              <li>サロン専用機器と専用溶液を使用</li>
+              <li>はじめての方でもスタッフが丁寧にご案内</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="slide" data-slide>
+          <div class="slide__media">
+            <img src="../public/salon-gallery-treatment-01.png" alt="清潔感のある施術スペース" />
+          </div>
+          <div class="slide__content">
+            <p class="kicker">RECOMMENDED</p>
+            <h2>こんな方におすすめ</h2>
+            <ul class="bullets">
+              <li>写真写りが気になる</li>
+              <li>清潔感を上げたい</li>
+              <li>接客・営業前に整えたい</li>
+              <li>イベント前にケアしたい</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="slide" data-slide data-flow-slide>
+          <div class="slide__media slide__media--flow">
+            <div class="step-player">
+              <img id="stepImage" src="../public/whitening-steps/01.png" alt="STEP 1" />
+              <div class="step-player__meta">
+                <p class="step-player__count" id="stepCount">STEP 1 / 5</p>
+                <p class="step-player__title" id="stepTitle">歯みがき</p>
+                <ul class="step-player__list" id="stepInstructions"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="slide__content">
+            <p class="kicker">STEPS</p>
+            <h2>かんたん5ステップ</h2>
+            <p class="lead">歯みがき → 専用の溶液塗布 → LED照射<br />→ ブラッシング → 仕上がり確認</p>
+            <p class="note">※店内モニター用に簡略化してご案内しています。</p>
+          </div>
+        </article>
+
+        <article class="slide" data-slide data-case-slide>
+          <div class="slide__media slide__media--case">
+            <div class="case-player">
+              <div class="case-player__img-wrap">
+                <img id="caseImage" src="../public/before-after-case-01.png" alt="CASE 1" />
+                <p class="case-player__img-note">※写真は一切加工せず、同条件で撮影</p>
+              </div>
+              <div class="case-player__meta">
+                <p class="case-player__count" id="caseCount">CASE 1 / 3</p>
+                <p class="case-player__title" id="caseTitle">女性30代｜紅茶習慣</p>
+                <p class="case-player__desc" id="caseDesc">毎日、紅茶を飲むことが多く、口元の黄ばみが気になり始めたケース</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide__content">
+            <p class="kicker">CASE</p>
+            <h2>変化の目安</h2>
+            <ul class="bullets">
+              <li>1回後・複数回後の参考画像を表示</li>
+              <li>無理のないペースで整えていくケア</li>
+              <li>継続利用のご相談も可能です</li>
+            </ul>
+            <p class="note">※画像は一例です。変化には個人差があります。</p>
+          </div>
+        </article>
+
+        <article class="slide slide--menu-balance" data-slide>
+          <div class="slide__media slide__media--menu">
+            <div class="price-card price-card--intro">
+              <div class="price-card__head">
+                <p class="price-card__title">初回体験</p>
+                <p class="price-card__cap">初回限定</p>
+                <p class="price-card__price"><span class="was">¥3,900</span> → <strong>¥1,900</strong></p>
+                <p class="price-card__cap">まずは変化を確認したい方へ</p>
+              </div>
+            </div>
+            <div class="price-card">
+              <p class="price-card__title">回数券（スタンダード基準）</p>
+              <p class="price-card__cap">しっかり変化を実感したい方へ</p>
+              <p class="price-card__cap">4回 ¥14,000（1回あたり¥3,500）</p>
+              <p class="price-card__cap">8回 ¥25,600（1回あたり¥3,200）</p>
+              <p class="price-card__cap">12回 ¥33,600（1回あたり¥2,800）｜一番人気</p>
+              <p class="price-card__cap">プレミアム追加 +¥1,200／回</p>
+            </div>
+            <div class="price-card">
+              <p class="price-card__title">スタンダード</p>
+              <p class="price-card__cap">通常メニュー（単回） ¥4,900</p>
+              <p class="price-card__cap">まずは様子を見たい方へ</p>
+              <p class="price-card__cap">プレミアムオプション +¥1,600（スタンダードに追加）</p>
+            </div>
+            <div class="price-card">
+              <p class="price-card__title">月額プラン（メンテナンス用）</p>
+              <p class="price-card__cap">月2回まで ¥6,800</p>
+              <p class="price-card__cap">回数券・月額はスタッフにご相談ください</p>
+            </div>
+          </div>
+          <div class="slide__content">
+            <p class="kicker">MENU</p>
+            <h2>メニューの選び方</h2>
+            <p class="lead">目的に合わせて、無理のない選び方ができます。</p>
+          </div>
+        </article>
+
+        <article class="slide" data-slide>
+          <div class="slide__media slide__media--guide">
+            <img class="slide__guide-img" src="../public/signage-slide-medical.png" alt="歯科医療とセルフホワイトニング連携の案内画像" />
+          </div>
+          <div class="slide__content">
+            <p class="kicker">PARTNER DENTAL INFO</p>
+            <h2>さらに白さを求める方へ</h2>
+            <div class="price-card">
+              <p class="price-card__title">歯科提携プラン</p>
+              <p class="price-card__price"><strong>医療ホワイトニング（単回） ¥7,900</strong></p>
+              <p class="price-card__price"><strong>医療3回コース ¥18,000</strong></p>
+              <p class="price-card__cap">LED照射 20分×2セット</p>
+              <p class="price-card__cap">オンライン診療後に処方された医療用ジェルをご持参ください。</p>
+              <p class="price-card__cap">※別途オンライン診療費＋医療用ジェル購入が必要です。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide" data-slide>
+          <div class="slide__media slide__media--faq">
+            <dl class="faq">
+              <div><dt>Q. 所要時間は？</dt><dd>A. 目安は30〜45分です（初回は目安60分）。</dd></div>
+              <div><dt>Q. 1回だけでも大丈夫？</dt><dd>A. はい、1回だけのご利用もOKです。</dd></div>
+              <div><dt>Q. 不安なときは？</dt><dd>A. スタッフがその場でご案内します。</dd></div>
+              <div><dt>Q. 予約は必要ですか？</dt><dd>A. 事前予約をおすすめしています。相談だけのご連絡も可能です。</dd></div>
+              <div><dt>Q. 痛みやしみはありますか？</dt><dd>A. ほとんどの方が痛みやしみを感じることはありません。</dd></div>
+              <div><dt>Q. 追加料金はありますか？</dt><dd>A. 基本は表示料金のみです。追加がある場合は事前にご説明します。</dd></div>
+            </dl>
+          </div>
+          <div class="slide__content">
+            <p class="kicker">FAQ</p>
+            <h2>よくある質問</h2>
+            <p class="lead">気になることは、スタッフまでお気軽にどうぞ。</p>
+          </div>
+        </article>
+
+        <article class="slide slide--closing" data-slide>
+          <div class="slide__media slide__media--closing">
+            <img class="slide__closing-img" src="../public/signage-slide-09.png" alt="9枚目の案内用画像" />
+          </div>
+          <div class="slide__content">
+            <p class="kicker">INFORMATION</p>
+            <h2>ご不明点はスタッフまで</h2>
+            <p class="lead">回数券・メンテナンス利用もご相談ください。</p>
+            <ul class="bullets">
+              <li>LINE予約もご利用いただけます</li>
+              <li>無理のないペースで続けられるご提案</li>
+              <li>自然な白さを、日常のルーティンに。</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <footer class="bottombar">
+        <p class="bottombar__hint">この案内は5秒ごとに自動で切り替わります</p>
+        <div class="pager">
+          <button type="button" class="pager__btn" id="prevBtn" aria-label="前のスライド">◀</button>
+          <span id="pagerText">1 / 9</span>
+          <button type="button" class="pager__btn" id="nextBtn" aria-label="次のスライド">▶</button>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

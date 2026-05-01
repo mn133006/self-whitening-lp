@@ -1,0 +1,81 @@
+.hero-salon-carousel {
+  width: 100%;
+  touch-action: pan-y;
+}
+
+.hero-salon-carousel__viewport {
+  overflow: hidden;
+  width: 100%;
+  border-radius: var(--radius-card);
+}
+
+.hero-salon-carousel__track {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-salon-carousel__track {
+    transition: none;
+  }
+}
+
+.hero-salon-carousel__slide {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.hero-salon-carousel__fig {
+  margin: 0;
+}
+
+.hero-salon-carousel__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.hero-salon-carousel__cap {
+  margin: var(--space-16) 0 0;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.9em;
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls);
+  color: var(--color-muted);
+}
+
+.hero-salon-carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.45rem;
+  margin-top: var(--space-16);
+}
+
+.hero-salon-carousel__dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgb(59 130 246 / 0.28);
+  cursor: pointer;
+}
+
+.hero-salon-carousel__dot:hover,
+.hero-salon-carousel__dot:focus-visible {
+  background: rgb(59 130 246 / 0.5);
+  outline: none;
+}
+
+.hero-salon-carousel__dot--active {
+  background: var(--color-primary);
+}

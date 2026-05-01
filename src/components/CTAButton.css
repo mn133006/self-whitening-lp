@@ -1,0 +1,68 @@
+.cta-btn__stack {
+  display: block;
+  text-align: center;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  min-height: 56px;
+  padding: 0 var(--space-24);
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-size: clamp(0.8125rem, 2.1vw + 0.55rem, 1.0625rem);
+  font-weight: var(--fw-heading);
+  letter-spacing: var(--ls);
+  line-height: var(--lh-heading);
+  text-decoration: none;
+  text-align: center;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+  white-space: nowrap;
+  line-break: strict;
+}
+
+.cta-btn:active {
+  transform: scale(0.98);
+}
+
+.cta-btn--primary {
+  background: linear-gradient(180deg, #60a5fa 0%, var(--color-primary) 48%, var(--color-primary-hover) 100%);
+  color: #fff;
+  box-shadow: var(--shadow-btn);
+  border: none;
+}
+
+.cta-btn--primary:hover {
+  background: linear-gradient(180deg, #93c5fd 0%, var(--color-primary) 45%, #1d4ed8 100%);
+  box-shadow: var(--shadow-btn-hover);
+}
+
+.cta-btn--secondary {
+  background: var(--color-base);
+  color: var(--color-accent);
+  border: 2px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.cta-btn--secondary:hover {
+  background: var(--color-bg);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-1px);
+}
+
+.cta-btn--ghost {
+  background: transparent;
+  color: var(--color-accent);
+  border: 2px dashed rgb(59 130 246 / 0.45);
+  box-shadow: none;
+}
+
+.cta-btn--ghost:hover {
+  background: rgb(59 130 246 / 0.06);
+}

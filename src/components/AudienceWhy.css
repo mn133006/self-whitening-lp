@@ -1,0 +1,69 @@
+.audience-why__card {
+  margin-top: var(--space-24);
+}
+
+.audience-why__lead {
+  margin: 0 auto;
+  max-width: var(--heading-measure);
+  font-family: var(--font-sans);
+  font-size: clamp(1.125rem, 3.4vw, 1.375rem);
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  color: var(--color-text);
+  text-align: center;
+}
+
+.audience-why__title {
+  margin-top: var(--space-8);
+  font-size: 0.9em;
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.audience-why__list--moments {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.audience-why__list--moments .audience-why__item {
+  margin: 0;
+  padding: var(--space-16);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-base);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.audience-why__list--moments .audience-why__item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.audience-why__pillar {
+  margin: var(--space-24) 0 0;
+  padding-top: var(--space-24);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 3.2vw, 1.0625rem);
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  color: var(--color-primary);
+}

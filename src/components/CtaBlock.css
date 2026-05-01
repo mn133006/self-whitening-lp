@@ -1,0 +1,106 @@
+.cta-block {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-24);
+  width: 100%;
+}
+
+.cta-block__reason {
+  margin: 0;
+  max-width: var(--text-measure);
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  color: var(--color-text);
+}
+
+.cta-block__reason strong {
+  font-weight: var(--fw-heading);
+  color: var(--color-accent);
+}
+
+.cta-block__urgency {
+  margin: 0;
+  max-width: var(--text-measure);
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls);
+  color: var(--color-muted);
+}
+
+.cta-block .cta-btn {
+  width: 100%;
+  max-width: 100%;
+  margin-top: calc(var(--space-32) - var(--space-24));
+  text-align: center;
+}
+
+.cta-block__micro {
+  margin: 0 auto;
+  min-width: 0;
+  width: 100%;
+  max-width: var(--text-measure);
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls);
+  color: var(--color-muted);
+}
+
+.cta-block__micro p {
+  margin: 0.12rem 0;
+}
+
+.cta-block--compact {
+  gap: 0.5rem;
+}
+
+.cta-block--compact .cta-block__reason {
+  font-size: 0.75rem;
+  max-width: var(--text-measure);
+}
+
+.cta-block--compact .cta-block__urgency {
+  font-size: 0.9em;
+  max-width: var(--text-measure);
+}
+
+.cta-block--compact .cta-block__micro {
+  font-size: 0.625rem;
+  line-height: 1.5;
+}
+
+.cta-block--inverse .cta-block__reason {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.cta-block--inverse .cta-block__reason strong {
+  color: #fff;
+}
+
+.cta-block--inverse .cta-block__urgency {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cta-block--inverse .cta-block__micro {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cta-block--inverse .cta-block__micro p {
+  color: rgba(255, 255, 255, 0.72);
+}
