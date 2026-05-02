@@ -13,7 +13,9 @@ export function AudienceWhy() {
     <section className="audience-why lp-section lp-section--tint" aria-labelledby="audience-why-title">
       <div className="lp-section__inner">
         <h2 className="audience-why__lead" id="audience-why-title">
-          こういう瞬間、気になっていませんか？
+          こういう瞬間、
+          <br />
+          気になっていませんか？
         </h2>
         <p className="audience-why__title">口元のくすみに、まず試せる一手</p>
         <div className="lp-card audience-why__card">
