@@ -113,27 +113,27 @@ export function Pricing() {
             </div>
           </section>
 
-          <section className="pricing__phase pricing__phase--medical" aria-label="さらに白さを求める方向け（医療）">
-            <p className="pricing__phase-step">5. さらに白さを求める方向け（医療）</p>
+          <section className="pricing__phase pricing__phase--medical" aria-label="さらに白さを求める方向け（歯科提携）">
+            <p className="pricing__phase-step">5. さらに白さを求める方向け（歯科提携）</p>
             <div className="pricing__card pricing__card--medical">
               <p className="pricing__medical-title">さらに白さを求める方へ</p>
               <p className="pricing__subcaption lp-caption">美容で限界を感じた方へのご案内</p>
               <ul className="pricing__vertical-list">
                 <li className="pricing__line-item pricing__line-item--medical">
-                  <span className="pricing__name">医療ホワイトニング（単回）</span>
+                  <span className="pricing__name">歯科提携ホワイトニング（単回）</span>
                   <span className="pricing__amount">7,900円</span>
                 </li>
               </ul>
               <div className="pricing__medical-plan">
                 <p className="pricing__option-title">セットプラン</p>
                 <div className="pricing__row">
-                  <p className="pricing__name">医療3回コース</p>
+                  <p className="pricing__name">歯科提携3回コース</p>
                   <p className="pricing__amount">18,000円</p>
                 </div>
               </div>
               <ul className="pricing__notes">
-                <li>医療機関との提携サービスです</li>
-                <li>オンライン診療・医療用ジェル費用が別途必要です</li>
+                <li>提携歯科でのホワイトニングです</li>
+                <li>オンライン診察・ジェル等の費用が別途必要です</li>
               </ul>
             </div>
           </section>
