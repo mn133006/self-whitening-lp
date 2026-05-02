@@ -35,8 +35,6 @@ export function Hero() {
           歯の黄ばみ、
           <br />
           そのままにしてない？
-          <br />
-          初回1,900円で白さを実感
         </h1>
         <p className="hero__urgency">枠が埋まりやすいため、まずは空き状況だけ確認しておくのがおすすめです</p>
 
