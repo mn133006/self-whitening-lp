@@ -121,8 +121,8 @@ export function Pricing() {
           <div className="pricing__category" id="price-dental">
             <h3 className="pricing__category-title">歯科提携ホワイトニング</h3>
             <div className="pricing__stack">
-          <section className="pricing__phase pricing__phase--medical" aria-label="さらに白さを求める方向け（歯科提携）">
-            <p className="pricing__phase-step">1. さらに白さを求める方向け（歯科提携）</p>
+          <section className="pricing__phase pricing__phase--medical" aria-label="さらに白さを求める方向け">
+            <p className="pricing__phase-step">1. さらに白さを求める方向け</p>
             <div className="pricing__card pricing__card--medical">
               <ul className="pricing__vertical-list">
                 <li className="pricing__line-item pricing__line-item--medical">
