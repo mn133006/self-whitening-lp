@@ -132,7 +132,7 @@ export function Pricing() {
                 </div>
               </div>
               <ul className="pricing__notes">
-                <li>提携歯科でのホワイトニングです</li>
+                <li>提携歯科と連携したホワイトニングです</li>
                 <li>オンライン診察・ジェル等の費用が別途必要です</li>
               </ul>
             </div>
