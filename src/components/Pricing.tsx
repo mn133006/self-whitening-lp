@@ -11,7 +11,7 @@ export function Pricing() {
           </span>
           <span className="lp-h2__ja">料金のご案内</span>
         </h2>
-        <p className="pricing__lead lp-body">迷ったら上から順に。まず体験、次に回数券、最後に単回を比較してください。</p>
+        <p className="pricing__lead lp-body">迷ったら上から順に、まず体験、次に回数券、最後に単回を比較してください</p>
 
         <div className="pricing__stack">
           <section className="pricing__phase pricing__phase--entry" aria-label="初回体験（入口）">
@@ -28,7 +28,7 @@ export function Pricing() {
                   <span className="pricing__price-now">1,900円</span>
                 </p>
               </div>
-              <p className="pricing__subcaption lp-caption">合わなければここで終了OK。まずは気軽に1回お試しください。</p>
+              <p className="pricing__subcaption lp-caption">合わなければここで終了OK、まずは気軽に1回お試しください</p>
             </div>
             <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
               LINEで空き状況と目安を確認する
@@ -56,7 +56,7 @@ export function Pricing() {
                   </div>
                   <ul className="pricing__premium-detail">
                     <li>LED照射 10分×2セット + クレンジング + 結晶新生トリートメント</li>
-                    <li>溶液濃度2倍配合で、より変化を感じやすくなっています。</li>
+                    <li>溶液濃度2倍配合で、より変化を感じやすくなっています</li>
                   </ul>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export function Pricing() {
                 <p className="pricing__name">月2回まで</p>
                 <p className="pricing__amount">5,900円</p>
               </div>
-              <p className="pricing__subcaption lp-caption">白さ維持したい方向け。回数券を使い切った後の維持にもおすすめです。</p>
+              <p className="pricing__subcaption lp-caption">白さ維持したい方向け、回数券を使い切った後の維持にもおすすめです</p>
             </div>
           </section>
 

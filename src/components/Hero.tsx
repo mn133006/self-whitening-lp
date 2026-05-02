@@ -31,7 +31,11 @@ export function Hero() {
       </div>
 
       <div className="hero__inner">
-        <h1 className="hero__catch">歯の黄ばみ、気になったままにしてない？</h1>
+        <h1 className="hero__catch">
+          歯の黄ばみ、
+          <br />
+          気になったままにしてない？
+        </h1>
         <p className="hero__urgency">枠が埋まりやすいため、まずは空き状況だけ確認しておくのがおすすめです</p>
 
         <div className="hero__cta-wrap">

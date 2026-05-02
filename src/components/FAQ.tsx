@@ -94,7 +94,7 @@ const ITEMS: FaqItem[] = [
 
 export function FAQ() {
   return (
-    <section className="faq lp-section" aria-labelledby="faq-title">
+    <section className="faq lp-section" id="faq" aria-labelledby="faq-title">
       <div className="lp-section__inner">
         <h2 className="lp-h2 lp-h2--split" id="faq-title">
           <span className="lp-h2__en" lang="en">

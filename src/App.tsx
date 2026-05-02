@@ -1,3 +1,4 @@
+import { useLayoutEffect } from 'react';
 import { AudienceWhy } from './components/AudienceWhy';
 import { SalonDifference } from './components/SalonDifference';
 import { BeforeAfter } from './components/BeforeAfter';
@@ -11,9 +12,18 @@ import { ServiceFlow } from './components/ServiceFlow';
 import { WhiteningSteps } from './components/WhiteningSteps';
 import { StickyCTA } from './components/StickyCTA';
 import { StoreInfo } from './components/StoreInfo';
+import { bindHashFragmentScroll, scrollToHashTarget } from './scrollToHash';
 import './App.css';
 
 function App() {
+  useLayoutEffect(() => bindHashFragmentScroll(), []);
+
+  useLayoutEffect(() => {
+    const onHashChange = () => scrollToHashTarget();
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
   return (
     <>
       <a className="skip-link" href="#top">
