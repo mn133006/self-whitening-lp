@@ -11,11 +11,10 @@ export function Pricing() {
           </span>
           <span className="lp-h2__ja">料金のご案内</span>
         </h2>
-        <p className="pricing__lead lp-body">迷ったら上から順に、まず体験、次に回数券、最後に単回を比較してください</p>
 
         <div className="pricing__stack">
-          <section className="pricing__phase pricing__phase--entry" aria-label="初回体験（入口）">
-            <p className="pricing__phase-step">1. 初回体験（入口）</p>
+          <section className="pricing__phase pricing__phase--entry" aria-label="初回体験">
+            <p className="pricing__phase-step">1. 初回体験</p>
             <div className="pricing__card pricing__card--intro">
               <p className="pricing__tag">初回限定 / 体験価格</p>
               <div className="pricing__row">
@@ -63,8 +62,8 @@ export function Pricing() {
             </div>
           </section>
 
-          <section className="pricing__phase pricing__phase--main" aria-label="回数券（メイン表示）">
-            <p className="pricing__phase-step">3. 回数券（メイン表示）</p>
+          <section className="pricing__phase pricing__phase--main" aria-label="回数券">
+            <p className="pricing__phase-step">3. 回数券</p>
 
             <div className="pricing__card pricing__card--ticket">
               <p className="pricing__badge">一番人気</p>
@@ -103,9 +102,9 @@ export function Pricing() {
           </section>
 
           <section className="pricing__phase pricing__phase--subscription" aria-label="月額プラン">
-            <p className="pricing__phase-step">4. 月額プラン（メンテナンス用）</p>
+            <p className="pricing__phase-step">4. 月額プラン</p>
             <div className="pricing__card pricing__card--subscription">
-              <p className="pricing__block-title">月額プラン（メンテナンス用）</p>
+              <p className="pricing__block-title">月額プラン</p>
               <div className="pricing__row">
                 <p className="pricing__name">月2回まで</p>
                 <p className="pricing__amount">5,900円</p>
