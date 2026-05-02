@@ -27,18 +27,18 @@ var WHITENING_STEPS = [
 var CASE_ITEMS = [
   {
     image: "../public/before-after-case-01.png",
-    title: "CASE 01",
-    desc: "1回後・複数回後の変化イメージ（参考）",
+    title: "女性30代｜紅茶習慣",
+    desc: "毎日、紅茶を飲むことが多い。気づいたら口元の黄ばみが気になり始めた",
   },
   {
     image: "../public/before-after-case-02.png",
-    title: "CASE 02",
-    desc: "継続ケア時の目安イメージ（参考）",
+    title: "女性20代｜チョコレート習慣",
+    desc: "間食でチョコをよく食べる。気づいたら歯の黄ばみが気になり始めた",
   },
   {
     image: "../public/before-after-case-03.png",
-    title: "CASE 03",
-    desc: "ライフスタイルに合わせたケア例（参考）",
+    title: "男性30代｜コーヒー習慣",
+    desc: "仕事中にコーヒーを飲む回数が多い。写真で歯の黄ばみが目立つように感じた",
   },
 ];
 
