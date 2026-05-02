@@ -12,7 +12,10 @@ export function Pricing() {
           <span className="lp-h2__ja">料金のご案内</span>
         </h2>
 
-        <div className="pricing__stack">
+        <div className="pricing__groups">
+          <div className="pricing__category" id="price-beauty">
+            <h3 className="pricing__category-title">美容ホワイトニング</h3>
+            <div className="pricing__stack">
           <section className="pricing__phase pricing__phase--entry" aria-label="初回体験">
             <p className="pricing__phase-step">1. 初回体験</p>
             <div className="pricing__card pricing__card--intro">
@@ -112,9 +115,14 @@ export function Pricing() {
               <p className="pricing__subcaption lp-caption">白さ維持したい方向け、回数券を使い切った後の維持にもおすすめです</p>
             </div>
           </section>
+            </div>
+          </div>
 
+          <div className="pricing__category" id="price-dental">
+            <h3 className="pricing__category-title">歯科提携ホワイトニング</h3>
+            <div className="pricing__stack">
           <section className="pricing__phase pricing__phase--medical" aria-label="さらに白さを求める方向け（歯科提携）">
-            <p className="pricing__phase-step">5. さらに白さを求める方向け（歯科提携）</p>
+            <p className="pricing__phase-step">1. さらに白さを求める方向け（歯科提携）</p>
             <div className="pricing__card pricing__card--medical">
               <p className="pricing__medical-title">さらに白さを求める方へ</p>
               <p className="pricing__subcaption lp-caption">美容で限界を感じた方へのご案内</p>
@@ -137,6 +145,8 @@ export function Pricing() {
               </ul>
             </div>
           </section>
+            </div>
+          </div>
         </div>
 
         <p className="pricing__closing lp-body u-measure">お客様の状態に合わせて最適なプランをご提案いたします</p>
