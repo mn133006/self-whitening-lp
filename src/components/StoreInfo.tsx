@@ -3,7 +3,7 @@ import { CTAButton } from './CTAButton';
 import { FranchiseBrand } from './FranchiseBrand';
 import './StoreInfo.css';
 
-const ADDRESS_LINE = '869-0532 熊本県宇城市松橋町久具301-2';
+const ADDRESS_LINE = '869-0532 熊本県宇城市松橋町久具302-1';
 const MAP_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS_LINE)}`;
 
 export function StoreInfo() {
@@ -33,7 +33,7 @@ export function StoreInfo() {
           <p className="store__address">
             〒869-0532
             <br />
-            熊本県宇城市松橋町久具301-2
+            熊本県宇城市松橋町久具302-1
           </p>
           <p className="store__text lp-body">
             営業時間 10:00〜20:00／予約優先・不定休
