@@ -124,8 +124,6 @@ export function Pricing() {
           <section className="pricing__phase pricing__phase--medical" aria-label="さらに白さを求める方向け（歯科提携）">
             <p className="pricing__phase-step">1. さらに白さを求める方向け（歯科提携）</p>
             <div className="pricing__card pricing__card--medical">
-              <p className="pricing__medical-title">さらに白さを求める方へ</p>
-              <p className="pricing__subcaption lp-caption">美容で限界を感じた方へのご案内</p>
               <ul className="pricing__vertical-list">
                 <li className="pricing__line-item pricing__line-item--medical">
                   <span className="pricing__name">歯科提携ホワイトニング（単回）</span>

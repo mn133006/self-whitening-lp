@@ -126,14 +126,6 @@
   color: var(--color-text);
 }
 
-.pricing__medical-title {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: var(--fw-heading);
-  line-height: var(--lh-heading);
-  color: #0f172a;
-}
-
 .pricing__row {
   margin-top: var(--space-8);
   display: flex;
