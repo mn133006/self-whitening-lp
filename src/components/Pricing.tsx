@@ -112,7 +112,7 @@ export function Pricing() {
                 <p className="pricing__name">月2回まで</p>
                 <p className="pricing__amount">5,900円</p>
               </div>
-              <p className="pricing__subcaption lp-caption">白さ維持したい方向け、回数券を使い切った後の維持にもおすすめです</p>
+              <p className="pricing__subcaption lp-caption">白さを維持したい方向け、回数券を使い切った後の維持にもおすすめです</p>
             </div>
           </section>
             </div>
