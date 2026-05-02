@@ -36,7 +36,7 @@ export function Hero() {
           <br />
           そのままにしてない？
         </h1>
-        <p className="hero__tagline">歯科提携ホワイトニング専門サロン</p>
+        <p className="hero__tagline">歯科提携×セルフホワイトニング専門サロン</p>
         <p className="hero__urgency">枠が埋まりやすいため、まずは空き状況だけ確認しておくのがおすすめです</p>
 
         <div className="hero__cta-wrap">
