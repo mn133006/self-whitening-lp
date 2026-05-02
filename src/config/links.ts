@@ -5,7 +5,7 @@
  * Vercel では環境変数 VITE_LINE_URL で上書きできます。
  */
 /** LINE公式アカウントマネージャー「URLを作成」で表示される値と一致させる */
-const LINE_URL_FALLBACK = 'https://lin.ee/Slrj6XZ';
+const LINE_URL_FALLBACK = 'https://lin.ee/vfmX17H';
 
 function resolveLineUrl(): string {
   const fromEnv = import.meta.env.VITE_LINE_URL;
