@@ -29,7 +29,7 @@ export function Pricing() {
               </div>
               <p className="pricing__subcaption lp-caption">合わなければここで終了OK、まずは気軽に1回お試しください</p>
             </div>
-            <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
+            <a className="pricing__cta" href={LINE_RESERVE_URL}>
               LINEで空き状況と目安を確認する
             </a>
           </section>
@@ -96,7 +96,7 @@ export function Pricing() {
               </div>
             </div>
 
-            <a className="pricing__cta" href={LINE_RESERVE_URL} target="_blank" rel="noopener noreferrer">
+            <a className="pricing__cta" href={LINE_RESERVE_URL}>
               LINEで空き状況と目安を確認する
             </a>
           </section>

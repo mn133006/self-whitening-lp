@@ -46,12 +46,7 @@ function App() {
       </main>
       <footer className="site-footer">
         <p className="site-footer__meta">
-          <a
-            className="site-footer__link"
-            href={LINE_RESERVE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="site-footer__link" href={LINE_RESERVE_URL}>
             LINE公式アカウント
           </a>
         </p>

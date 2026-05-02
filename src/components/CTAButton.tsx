@@ -19,7 +19,8 @@ export function CTAButton({
   href,
   children,
   variant = 'primary',
-  external = true,
+  /** false: 同一タブ（LINEアプリ内ブラウザ等で target=_blank が効かない対策） */
+  external = false,
   ariaLabel,
 }: Props) {
   return (
