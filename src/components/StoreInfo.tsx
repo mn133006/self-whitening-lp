@@ -1,3 +1,5 @@
+import { LINE_RESERVE_URL } from '../config/links';
+import { CTAButton } from './CTAButton';
 import { FranchiseBrand } from './FranchiseBrand';
 import './StoreInfo.css';
 
@@ -43,6 +45,14 @@ export function StoreInfo() {
           <p className="store__text store__text--note lp-caption">
             営業時間・定休日は変更となる場合があります。LINEにてご確認ください。
           </p>
+          <div className="store__line" id="line">
+            <CTAButton
+              href={LINE_RESERVE_URL}
+              ariaLabel="LINE公式アカウントを開く（外部サイトへ移動）"
+            >
+              LINE公式アカウントを開く
+            </CTAButton>
+          </div>
           <p className="store__sub">
             <a className="store__maplink" href={MAP_URL} target="_blank" rel="noopener noreferrer">
               Googleマップで開く

@@ -39,6 +39,25 @@ main > * + * {
   }
 }
 
+.site-footer__meta {
+  margin: 0 0 var(--space-16);
+}
+
+.site-footer__link {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.site-footer__link:hover {
+  color: var(--color-primary-hover);
+}
+
 .site-footer__text {
   margin: 0;
   font-family: var(--font-sans);

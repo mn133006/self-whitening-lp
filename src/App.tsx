@@ -12,6 +12,7 @@ import { ServiceFlow } from './components/ServiceFlow';
 import { WhiteningSteps } from './components/WhiteningSteps';
 import { StickyCTA } from './components/StickyCTA';
 import { StoreInfo } from './components/StoreInfo';
+import { LINE_RESERVE_URL } from './config/links';
 import { bindHashFragmentScroll, scrollToHashTarget } from './scrollToHash';
 import './App.css';
 
@@ -44,6 +45,16 @@ function App() {
         <StoreInfo />
       </main>
       <footer className="site-footer">
+        <p className="site-footer__meta">
+          <a
+            className="site-footer__link"
+            href={LINE_RESERVE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LINE公式アカウント
+          </a>
+        </p>
         <p className="site-footer__text">© {new Date().getFullYear()} CLEAR ROUTINE</p>
       </footer>
       <StickyCTA />
