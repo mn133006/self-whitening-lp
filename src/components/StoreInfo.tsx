@@ -39,7 +39,8 @@ export function StoreInfo() {
             営業時間 10:00〜20:00／予約優先・不定休
           </p>
           <p className="store__text lp-body">
-            JR松橋駅より徒歩約15分。上記住所をナビに入力いただくとスムーズです。
+            JR松橋駅より徒歩約15分。
+            上記住所をナビに入力いただくとスムーズです。
           </p>
           <p className="store__text lp-body">駐車12台。バス停（松橋高校前）は目の前です。</p>
           <p className="store__text store__text--note lp-caption">
