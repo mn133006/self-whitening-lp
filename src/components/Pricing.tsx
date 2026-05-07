@@ -94,7 +94,7 @@ export function Pricing() {
                 <p className="pricing__option-title">プレミアム追加（回数券利用時）</p>
                 <div className="pricing__row pricing__row--option">
                   <p className="pricing__name">追加料金</p>
-                  <p className="pricing__amount">+1,200円／回</p>
+                  <p className="pricing__amount">+1,000円／回</p>
                 </div>
               </div>
             </div>
