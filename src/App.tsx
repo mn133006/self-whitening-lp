@@ -31,9 +31,9 @@ function App() {
         本文へスキップ
       </a>
       <main>
+        <AudienceWhy />
         <Hero />
         <GuidePop />
-        <AudienceWhy />
         <SalonDifference />
         <BeforeAfter />
         <WhiteningSteps />
