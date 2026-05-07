@@ -23,7 +23,7 @@ export function Pricing() {
               <div className="pricing__row">
                 <p className="pricing__name">初回体験</p>
                 <p className="pricing__amount pricing__amount--intro">
-                  <span className="pricing__was">3,900円</span>
+                  <span className="pricing__was">4,900円</span>
                   <span className="pricing__price-sep" aria-hidden="true">
                     →
                   </span>
