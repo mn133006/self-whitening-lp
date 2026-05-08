@@ -1,11 +1,11 @@
 import { LINE_RESERVE_URL } from '../config/links';
+import { storeMapsEmbedSrc, storeMapsOpenUrl } from '../config/storeMap';
 import { CTAButton } from './CTAButton';
 import { FranchiseBrand } from './FranchiseBrand';
 import './StoreInfo.css';
 
-const ADDRESS_LINE = '869-0532 熊本県宇城市松橋町久具302-1';
-const MAP_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS_LINE)}`;
-const MAP_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent(ADDRESS_LINE)}&output=embed`;
+const MAP_OPEN_URL = storeMapsOpenUrl();
+const MAP_EMBED_URL = storeMapsEmbedSrc();
 
 export function StoreInfo() {
   return (
@@ -56,7 +56,7 @@ export function StoreInfo() {
             </CTAButton>
           </div>
           <p className="store__sub">
-            <a className="store__maplink" href={MAP_URL} target="_blank" rel="noopener noreferrer">
+            <a className="store__maplink" href={MAP_OPEN_URL} target="_blank" rel="noopener noreferrer">
               Googleマップで開く
             </a>
           </p>
