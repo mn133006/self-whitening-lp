@@ -1,3 +1,18 @@
+/** ヒーロー内では帯状のグレー背景を付けず、ページ白地に馴染ませる */
+.audience-why--in-hero {
+  margin: var(--space-24) 0 0;
+  padding: 0;
+  background: transparent;
+}
+
+.audience-why--in-hero .audience-why__card {
+  margin-top: var(--space-24);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
 .audience-why__card {
   margin-top: var(--space-24);
 }

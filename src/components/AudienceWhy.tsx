@@ -10,7 +10,7 @@ const MOMENTS = [
 
 export function AudienceWhy() {
   return (
-    <section className="audience-why lp-section lp-section--tint" aria-labelledby="audience-why-title">
+    <section className="audience-why audience-why--in-hero" aria-labelledby="audience-why-title">
       <div className="lp-section__inner">
         <h2 className="audience-why__lead" id="audience-why-title">
           こういう瞬間、
