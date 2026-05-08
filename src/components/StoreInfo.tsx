@@ -5,6 +5,7 @@ import './StoreInfo.css';
 
 const ADDRESS_LINE = '869-0532 熊本県宇城市松橋町久具302-1';
 const MAP_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS_LINE)}`;
+const MAP_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent(ADDRESS_LINE)}&output=embed`;
 
 export function StoreInfo() {
   return (
@@ -59,6 +60,15 @@ export function StoreInfo() {
               Googleマップで開く
             </a>
           </p>
+          <div className="store__map" aria-label="店舗の地図">
+            <iframe
+              className="store__map-frame"
+              src={MAP_EMBED_URL}
+              title="CLEAR ROUTINE の地図"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </div>
         <figure className="store__photo">
           <img

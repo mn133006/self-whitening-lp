@@ -1,5 +1,4 @@
 import { useLayoutEffect } from 'react';
-import { AudienceWhy } from './components/AudienceWhy';
 import { SalonDifference } from './components/SalonDifference';
 import { BeforeAfter } from './components/BeforeAfter';
 import { FAQ } from './components/FAQ';
@@ -31,7 +30,6 @@ function App() {
         本文へスキップ
       </a>
       <main>
-        <AudienceWhy />
         <Hero />
         <GuidePop />
         <SalonDifference />

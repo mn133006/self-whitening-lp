@@ -1,4 +1,5 @@
 import { CTAButton } from './CTAButton';
+import { AudienceWhy } from './AudienceWhy';
 import { FranchiseBrand } from './FranchiseBrand';
 import { HeroSalonCarousel } from './HeroSalonCarousel';
 import { LINE_RESERVE_URL } from '../config/links';
@@ -53,6 +54,7 @@ export function Hero() {
         </div>
 
         <p className="hero__sub">まずは1回、目安30〜45分で体験できます</p>
+        <AudienceWhy />
 
         <div className="hero__visual" aria-label="店内・施術の写真">
           <p className="hero__visual-label lp-caption">店内のようす</p>
