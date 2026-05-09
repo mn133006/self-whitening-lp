@@ -24,7 +24,7 @@ export function WhiteningDiagnosis() {
           あなたに合うホワイトニング診断
         </h2>
         <p className="diagnosis__lead lp-body u-measure">
-          どのホワイトニングが自分に合っているか分からない方へ。
+          どのホワイトニングが自分に合っているか不安な方へ。
           <br />
           ご希望の白さや現在の歯の状態に合わせて、最適な方法をご提案します。
         </p>
