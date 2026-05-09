@@ -3,6 +3,21 @@
   background: var(--color-base);
 }
 
+.hero__banner-link {
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.hero__banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* サロンロゴ：セクション左右パディングを打ち消して横幅いっぱい */
 .hero__logo-row {
   margin: 0 calc(-1 * var(--section-pad-x)) var(--space-16);
