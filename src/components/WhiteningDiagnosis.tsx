@@ -2,7 +2,7 @@ import { MessageCircle, ShieldCheck, Sparkles } from 'lucide-react';
 import './WhiteningDiagnosis.css';
 
 const SELF_POINTS = [
-  'コーヒーやお茶による着色が気になる',
+  'コーヒーやタバコによる着色が気になる',
   '自然な白さを目指したい',
   '痛みの少ない方法を選びたい',
   'まずは気軽に試したい',
