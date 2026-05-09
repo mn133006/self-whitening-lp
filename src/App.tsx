@@ -9,6 +9,7 @@ import { MidCTA } from './components/MidCTA';
 import { Pricing } from './components/Pricing';
 import { ServiceFlow } from './components/ServiceFlow';
 import { WhiteningSteps } from './components/WhiteningSteps';
+import { WhiteningDiagnosis } from './components/WhiteningDiagnosis';
 import { StickyCTA } from './components/StickyCTA';
 import { StoreInfo } from './components/StoreInfo';
 import { LINE_RESERVE_URL } from './config/links';
@@ -37,6 +38,7 @@ function App() {
         <WhiteningSteps />
         <ServiceFlow />
         <Pricing />
+        <WhiteningDiagnosis />
         <MidCTA />
         <FAQ />
         <FinalCTA />

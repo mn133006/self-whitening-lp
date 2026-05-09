@@ -1,0 +1,91 @@
+.diagnosis {
+  background: var(--color-base);
+}
+
+.diagnosis__lead {
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+.diagnosis__grid {
+  margin-top: var(--space-24);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-16);
+}
+
+.diagnosis__card {
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card-hover);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.diagnosis__card-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  color: var(--color-primary);
+}
+
+.diagnosis__list {
+  list-style: none;
+  margin: var(--space-16) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.diagnosis__list li {
+  position: relative;
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.9375rem;
+  line-height: var(--lh-body);
+  color: var(--color-text);
+}
+
+.diagnosis__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+}
+
+.diagnosis__guide {
+  margin-top: var(--space-24);
+  border-radius: 1rem;
+  border-color: rgb(59 130 246 / 0.2);
+}
+
+.diagnosis__guide-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: var(--fw-heading);
+  color: var(--color-primary);
+}
+
+.diagnosis__guide-body {
+  margin-top: var(--space-8);
+}
+
+@media (min-width: 900px) {
+  .diagnosis__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
