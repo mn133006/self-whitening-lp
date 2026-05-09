@@ -30,10 +30,10 @@ export function WhiteningDiagnosis() {
         </p>
 
         <div className="diagnosis__grid">
-          <article className="diagnosis__card lp-card" aria-label="セルフホワイトニングがおすすめの方">
+          <article className="diagnosis__card lp-card" aria-label="美容ホワイトニングがおすすめの方">
             <h3 className="diagnosis__card-title">
               <Sparkles size={18} aria-hidden="true" />
-              <span>セルフホワイトニングがおすすめの方</span>
+              <span>美容ホワイトニングがおすすめの方</span>
             </h3>
             <ul className="diagnosis__list">
               {SELF_POINTS.map((point) => (
