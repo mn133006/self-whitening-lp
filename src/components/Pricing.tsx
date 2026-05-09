@@ -4,7 +4,7 @@ import './Pricing.css';
 export function Pricing() {
   return (
     <section className="pricing lp-section" aria-labelledby="price-title" id="price">
-      <div className="lp-section__inner pricing__inner">
+      <div className="lp-section__inner">
         <h2 className="lp-h2 lp-h2--split" id="price-title">
           <span className="lp-h2__en" lang="en">
             PRICE
@@ -12,17 +12,7 @@ export function Pricing() {
           <span className="lp-h2__ja">料金のご案内</span>
         </h2>
 
-        <div className="pricing__layout">
-          <figure className="pricing__visual">
-            <img
-              className="pricing__visual-img"
-              src="/section-pricing-visual.svg"
-              alt="初回体験1,900円とわかりやすい料金設計を示すイラスト"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
-          <div className="pricing__groups">
+        <div className="pricing__groups">
           <div className="pricing__category" id="price-beauty">
             <h3 className="pricing__category-title">美容ホワイトニング</h3>
             <div className="pricing__stack">
@@ -155,7 +145,6 @@ export function Pricing() {
           </section>
             </div>
           </div>
-        </div>
         </div>
 
         <p className="pricing__closing lp-body u-measure">お客様の状態に合わせて最適なプランをご提案いたします</p>

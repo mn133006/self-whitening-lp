@@ -19,28 +19,15 @@ const MEDICAL_POINTS = [
 export function WhiteningDiagnosis() {
   return (
     <section className="diagnosis lp-section" aria-labelledby="diagnosis-title">
-      <div className="lp-section__inner diagnosis__inner">
-        <div className="diagnosis__intro">
-          <div>
-            <h2 className="lp-h2" id="diagnosis-title">
-              あなたに合うホワイトニング診断
-            </h2>
-            <p className="diagnosis__lead lp-body u-measure">
-              どのホワイトニングが自分に合っているか不安な方へ。
-              <br />
-              ご希望の白さや現在の歯の状態に合わせて、最適な方法をご提案します。
-            </p>
-          </div>
-          <figure className="diagnosis__visual">
-            <img
-              className="diagnosis__visual-img"
-              src="/section-diagnosis-visual.svg"
-              alt="美容ホワイトニングと医療ホワイトニングの違いを選びやすくする診断イラスト"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
-        </div>
+      <div className="lp-section__inner">
+        <h2 className="lp-h2" id="diagnosis-title">
+          あなたに合うホワイトニング診断
+        </h2>
+        <p className="diagnosis__lead lp-body u-measure">
+          どのホワイトニングが自分に合っているか不安な方へ。
+          <br />
+          ご希望の白さや現在の歯の状態に合わせて、最適な方法をご提案します。
+        </p>
 
         <div className="diagnosis__grid">
           <article className="diagnosis__card lp-card" aria-label="美容ホワイトニングがおすすめの方">
