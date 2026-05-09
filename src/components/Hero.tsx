@@ -12,47 +12,51 @@ export function Hero() {
 
   return (
     <section className="hero" id="top" aria-label="メインビジュアル">
-      <div className="hero__logo-row">
-        <div className="hero__logo-stack">
-          <div className="hero__logo-slot">
-            <img
-              className="hero__logo"
-              src="/logo-clear-routine.png"
-              alt="CLEAR ROUTINE"
-              width={1024}
-              height={1024}
-              decoding="async"
-              fetchPriority="high"
-            />
-            <div className="hero__franchise-below">
-              <FranchiseBrand size="md" className="hero__franchise-brand hero__franchise-brand--hero" />
+      <div className="hero__banner">
+        <div className="hero__banner-content">
+          <div className="hero__logo-row">
+            <div className="hero__logo-stack">
+              <div className="hero__logo-slot">
+                <img
+                  className="hero__logo"
+                  src="/logo-clear-routine.png"
+                  alt="CLEAR ROUTINE"
+                  width={1024}
+                  height={1024}
+                  decoding="async"
+                  fetchPriority="high"
+                />
+                <div className="hero__franchise-below">
+                  <FranchiseBrand size="md" className="hero__franchise-brand hero__franchise-brand--hero" />
+                </div>
+              </div>
             </div>
+          </div>
+
+          <h1 className="hero__catch">
+            白い歯で、
+            <br />
+            自然な自信を。
+          </h1>
+          <p className="hero__tagline">熊本・宇城のセルフホワイトニング専門サロン</p>
+          <p className="hero__price">初回体験 1,900円（税込）</p>
+
+          <div className="hero__cta-wrap">
+            <CTAButton href={LINE_RESERVE_URL} ariaLabel={CTA_PURPOSE_ARIA}>
+              {CTA_PURPOSE_LABEL}
+            </CTAButton>
+            {reassureLines.length > 0 ? (
+              <div className="hero__reassure" aria-label="ご案内について">
+                {reassureLines.map((line, i) => (
+                  <p key={i}>{line}</p>
+                ))}
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
 
       <div className="hero__inner">
-        <h1 className="hero__catch">
-          歯の黄ばみ、
-          <br />
-          そのままにしてない？
-        </h1>
-        <p className="hero__tagline">歯科提携×セルフホワイトニング専門サロン</p>
-        <p className="hero__urgency">枠が埋まりやすいため、まずは空き状況だけ確認しておくのがおすすめです</p>
-
-        <div className="hero__cta-wrap">
-          <CTAButton href={LINE_RESERVE_URL} ariaLabel={CTA_PURPOSE_ARIA}>
-            {CTA_PURPOSE_LABEL}
-          </CTAButton>
-          {reassureLines.length > 0 ? (
-            <div className="hero__reassure" aria-label="ご案内について">
-              {reassureLines.map((line, i) => (
-                <p key={i}>{line}</p>
-              ))}
-            </div>
-          ) : null}
-        </div>
-
         <p className="hero__sub">まずは1回、目安30〜45分で体験できます</p>
         <AudienceWhy />
 
