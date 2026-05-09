@@ -21,25 +21,36 @@ const STEPS = [
 export function ServiceFlow() {
   return (
     <section className="flow lp-section lp-section--tint" aria-labelledby="flow-title">
-      <div className="lp-section__inner">
+      <div className="lp-section__inner flow__inner">
         <h2 className="lp-h2 lp-h2--split" id="flow-title">
           <span className="lp-h2__en" lang="en">
             FLOW
           </span>
           <span className="lp-h2__ja">来店までの流れ</span>
         </h2>
-        <div className="lp-card flow__card">
-          <ol className="flow__list">
-            {STEPS.map((s) => (
-              <li key={s.n} className="flow__item">
-                <span className="flow__num">{s.n}</span>
-                <div>
-                  <p className="flow__name">{s.title}</p>
-                  <p className="flow__text lp-caption">{s.body}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+        <div className="flow__layout">
+          <figure className="flow__visual">
+            <img
+              className="flow__visual-img"
+              src="/section-flow-visual.svg"
+              alt="LINE相談から来店説明、施術までの流れを表すイラスト"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div className="lp-card flow__card">
+            <ol className="flow__list">
+              {STEPS.map((s) => (
+                <li key={s.n} className="flow__item">
+                  <span className="flow__num">{s.n}</span>
+                  <div>
+                    <p className="flow__name">{s.title}</p>
+                    <p className="flow__text lp-caption">{s.body}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </div>
     </section>

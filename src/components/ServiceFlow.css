@@ -1,3 +1,25 @@
+.flow__inner {
+  max-width: 980px;
+}
+
+.flow__layout {
+  display: grid;
+  gap: var(--space-24);
+  align-items: center;
+}
+
+.flow__visual {
+  margin: 0;
+}
+
+.flow__visual-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card-hover);
+}
+
 .flow__card {
   margin-top: var(--space-24);
 }
@@ -41,4 +63,14 @@
 .flow__text {
   margin: 0;
   color: var(--color-muted);
+}
+
+@media (min-width: 900px) {
+  .flow__layout {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  }
+
+  .flow__card {
+    margin-top: 0;
+  }
 }

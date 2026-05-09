@@ -87,31 +87,42 @@ const ITEMS: FaqItem[] = [
 export function FAQ() {
   return (
     <section className="faq lp-section" id="faq" aria-labelledby="faq-title">
-      <div className="lp-section__inner">
+      <div className="lp-section__inner faq__inner">
         <h2 className="lp-h2 lp-h2--split" id="faq-title">
           <span className="lp-h2__en" lang="en">
             FAQ
           </span>
           <span className="lp-h2__ja">よくある質問</span>
         </h2>
-        <div className="lp-card faq__card">
-          <div className="faq__list">
-            {ITEMS.map((item) => (
-              <details key={item.q} className="faq__item">
-                <summary className="faq__q">{item.q}</summary>
-                <div className="faq__a">
-                  {item.paragraphs.map((p, i) => (
-                    <p key={i} className="faq__a-p lp-body">
-                      {p}
-                    </p>
-                  ))}
-                </div>
-              </details>
-            ))}
+        <div className="faq__layout">
+          <figure className="faq__visual">
+            <img
+              className="faq__visual-img"
+              src="/section-faq-visual.svg"
+              alt="よくある質問と回答を分かりやすく示すチャットイラスト"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div className="lp-card faq__card">
+            <div className="faq__list">
+              {ITEMS.map((item) => (
+                <details key={item.q} className="faq__item">
+                  <summary className="faq__q">{item.q}</summary>
+                  <div className="faq__a">
+                    {item.paragraphs.map((p, i) => (
+                      <p key={i} className="faq__a-p lp-body">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </div>
+            <p className="faq__escape">
+              ここにないことも、LINEで気軽にお問い合わせください。無理な勧誘はいたしません。
+            </p>
           </div>
-          <p className="faq__escape">
-            ここにないことも、LINEで気軽にお問い合わせください。無理な勧誘はいたしません。
-          </p>
         </div>
       </div>
     </section>

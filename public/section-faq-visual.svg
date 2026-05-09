@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="220" y1="80" x2="760" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="shadow" x="80" y="40" width="800" height="560" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#2563eb" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="960" height="640" rx="40" fill="url(#bg)"/>
+  <circle cx="812" cy="72" r="170" fill="#eff6ff"/>
+  <circle cx="110" cy="560" r="210" fill="#bfdbfe" opacity="0.35"/>
+  <g filter="url(#shadow)">
+    <rect x="130" y="90" width="700" height="460" rx="36" fill="white"/>
+  </g>
+  <text x="480" y="160" text-anchor="middle" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="34" font-weight="700" fill="#0f172a">よくある質問</text>
+  
+  <rect x="235" y="230" width="490" height="92" rx="28" fill="#eff6ff" stroke="#bfdbfe" stroke-width="4"/>
+  <rect x="305" y="350" width="420" height="92" rx="28" fill="#ffffff" stroke="#93c5fd" stroke-width="4"/>
+  <circle cx="286" cy="276" r="20" fill="#2563eb"/><text x="286" y="285" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="white">?</text>
+  <circle cx="356" cy="396" r="20" fill="#60a5fa"/><text x="356" y="405" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="white">A</text>
+  <path d="M340 276h300M410 396h240" stroke="#93c5fd" stroke-width="12" stroke-linecap="round"/>
+</svg>

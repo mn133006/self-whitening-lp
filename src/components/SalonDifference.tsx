@@ -22,7 +22,7 @@ const POINTS = [
 export function SalonDifference() {
   return (
     <section className="salon-diff lp-section" aria-labelledby="salon-diff-title">
-      <div className="lp-section__inner">
+      <div className="lp-section__inner salon-diff__inner">
         <h2 className="lp-h2 lp-h2--split" id="salon-diff-title">
           <span className="lp-h2__en" lang="en">
             WHY US
@@ -34,14 +34,25 @@ export function SalonDifference() {
           <br />
           <strong>納得してから、次の一歩を選べる場所</strong>です。
         </p>
-        <ul className="salon-diff__points">
-          {POINTS.map((p) => (
-            <li key={p.t} className="salon-diff__point">
-              <p className="salon-diff__point-title">{p.t}</p>
-              <p className="salon-diff__point-body lp-caption">{p.b}</p>
-            </li>
-          ))}
-        </ul>
+        <div className="salon-diff__layout">
+          <figure className="salon-diff__visual">
+            <img
+              className="salon-diff__visual-img"
+              src="/section-why-visual.svg"
+              alt="CLEAR ROUTINEが選ばれる理由を表す清潔感のあるイラスト"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <ul className="salon-diff__points">
+            {POINTS.map((p) => (
+              <li key={p.t} className="salon-diff__point">
+                <p className="salon-diff__point-title">{p.t}</p>
+                <p className="salon-diff__point-body lp-caption">{p.b}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
