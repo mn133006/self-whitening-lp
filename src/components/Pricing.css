@@ -186,6 +186,24 @@
   font-size: 0.9rem;
 }
 
+.pricing__duration {
+  display: inline-flex;
+  align-self: flex-start;
+  margin: var(--space-8) 0 0;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgb(59 130 246 / 0.22);
+  background: rgb(239 246 255 / 0.72);
+  color: #1d4ed8;
+  font-size: 0.8rem;
+  font-weight: var(--fw-heading);
+  line-height: 1.45;
+}
+
+.pricing__duration--option {
+  margin-top: var(--space-8);
+}
+
 .pricing__vertical-list {
   list-style: none;
   margin: var(--space-16) 0 0;

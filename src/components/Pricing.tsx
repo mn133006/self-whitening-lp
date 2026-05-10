@@ -30,6 +30,7 @@ export function Pricing() {
                   <span className="pricing__price-now">1,900円</span>
                 </p>
               </div>
+              <p className="pricing__duration">所要時間：目安60分（カウンセリング込み）</p>
               <p className="pricing__subcaption lp-caption">合わなければここで終了OK、まずは気軽に1回お試しください</p>
             </div>
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
@@ -46,6 +47,7 @@ export function Pricing() {
                   <p className="pricing__name">スタンダード</p>
                   <p className="pricing__amount">4,900円</p>
                 </div>
+                <p className="pricing__duration">所要時間：目安30〜45分</p>
                 <p className="pricing__subcaption lp-caption">まずは様子を見たい方へ</p>
                 <ul className="pricing__course-spec">
                   <li>LED照射 8分×2セット + トリートメント</li>
@@ -56,6 +58,7 @@ export function Pricing() {
                     <p className="pricing__name">追加料金</p>
                     <p className="pricing__amount">+1,600円</p>
                   </div>
+                  <p className="pricing__duration pricing__duration--option">所要時間：目安45分</p>
                   <ul className="pricing__premium-detail">
                     <li>LED照射 10分×2セット + クレンジング + 結晶新生トリートメント</li>
                     <li>溶液濃度2倍配合で、より変化を感じやすくなっています</li>
@@ -71,6 +74,7 @@ export function Pricing() {
             <div className="pricing__card pricing__card--ticket">
               <p className="pricing__badge">一番人気</p>
               <p className="pricing__block-title">回数券（スタンダード基準）</p>
+              <p className="pricing__duration">所要時間：目安30〜45分／回</p>
               <p className="pricing__subcaption lp-caption">しっかり変化を実感したい方へ</p>
               <ul className="pricing__vertical-list">
                 <li className="pricing__line-item">
@@ -112,6 +116,7 @@ export function Pricing() {
                 <p className="pricing__name">月2回まで</p>
                 <p className="pricing__amount">5,900円</p>
               </div>
+              <p className="pricing__duration">所要時間：目安30〜45分／回</p>
               <p className="pricing__subcaption lp-caption">白さを維持したい方向け、回数券を使い切った後の維持にもおすすめです</p>
             </div>
           </section>
@@ -128,6 +133,7 @@ export function Pricing() {
                 <li className="pricing__line-item pricing__line-item--medical">
                   <span className="pricing__name">歯科提携ホワイトニング（単回）</span>
                   <span className="pricing__amount">7,900円</span>
+                  <span className="pricing__per-price">所要時間：目安30〜45分</span>
                 </li>
               </ul>
               <div className="pricing__medical-plan">
@@ -136,6 +142,7 @@ export function Pricing() {
                   <p className="pricing__name">歯科提携3回コース</p>
                   <p className="pricing__amount">18,000円</p>
                 </div>
+                <p className="pricing__duration pricing__duration--option">所要時間：目安30〜45分／回</p>
               </div>
               <ul className="pricing__notes">
                 <li>提携歯科と連携したホワイトニングです</li>
