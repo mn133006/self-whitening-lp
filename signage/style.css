@@ -149,6 +149,15 @@ body {
   display: block;
 }
 
+.slide__media--wide {
+  background: #fff;
+}
+
+.slide__media--wide img {
+  object-fit: contain;
+  background: #fff;
+}
+
 .slide__media--logo {
   background: linear-gradient(145deg, #ffffff 0%, #eff6ff 100%);
   display: grid;
@@ -281,9 +290,58 @@ h2 {
 
 .slide__media--flow,
 .slide__media--menu,
-.slide__media--faq {
+.slide__media--faq,
+.slide__media--diagnosis {
   padding: 2vh 1.2vw;
   background: linear-gradient(145deg, #fff 0%, #f8fafc 100%);
+}
+
+.slide--hero-banner .slide__content {
+  justify-content: center;
+}
+
+.slide__media--diagnosis {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1vw;
+  align-content: center;
+}
+
+.diagnosis-card {
+  min-height: 62%;
+  border: 1px solid #dbeafe;
+  border-radius: 1.1vh;
+  background: #fff;
+  box-shadow: 0 12px 28px rgb(37 99 235 / 0.08);
+  padding: 2vh 1.2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.diagnosis-card--beauty {
+  background: linear-gradient(160deg, #ffffff 0%, #eff6ff 100%);
+}
+
+.diagnosis-card--medical {
+  background: linear-gradient(160deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.diagnosis-card__title {
+  margin: 0 0 1.2vh;
+  color: var(--color-primary-dark);
+  font-size: clamp(1.1rem, 1.2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.diagnosis-card ul {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: 0.8vh;
+  font-size: clamp(0.95rem, 1vw, 1.3rem);
+  line-height: 1.45;
 }
 
 /* 6枚目: 左右の高さ・開始位置を揃える */
@@ -335,7 +393,7 @@ h2 {
 
 .slide--menu-balance .slide__media--menu .price-card__cap {
   margin: 0.12vh 0;
-  font-size: clamp(0.82rem, 0.82vw, 1.05rem);
+  font-size: clamp(0.8rem, 0.8vw, 1.02rem);
   line-height: 1.32;
 }
 
