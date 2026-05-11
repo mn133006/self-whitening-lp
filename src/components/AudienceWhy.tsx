@@ -1,14 +1,34 @@
+import { CTAButton } from './CTAButton';
+import { CTA_PURPOSE_ARIA, CTA_PURPOSE_LABEL } from '../config/ctaCopy';
+import { LINE_RESERVE_URL } from '../config/links';
 import './AudienceWhy.css';
 
 const MOMENTS = [
-  '人前で笑うとき、少し口元が気になる',
-  '写真を見返したとき、歯の色に目がいく',
-  '接客や営業で、第一印象を少しでも良くしたい',
-  'マスクを外す機会が増えて、気になり始めた',
-  '清潔感を上げたいが、何から始めるか迷っている',
-];
+  {
+    title: '人前で笑うとき、少し口元が気になる',
+    body: '自然な笑顔を、もっと自信を持って見せたい。',
+  },
+  {
+    title: '写真を見返したとき、歯の色に目がいく',
+    body: 'もっと明るい笑顔で写りたい。',
+  },
+  {
+    title: '接客や営業で、第一印象を少しでも良くしたい',
+    body: '清潔感のある印象は、信頼にもつながります。',
+  },
+  {
+    title: 'マスクを外す機会が増えて、気になり始めた',
+    body: '人と会う前に、口元の印象を整えたい。',
+  },
+  {
+    title: '清潔感を上げたいが、何から始めるか迷っている',
+    body: 'まずは気軽に試せる方法から始めたい。',
+  },
+] as const;
 
 export function AudienceWhy() {
+  const buttonLines = CTA_PURPOSE_LABEL.split('\n');
+
   return (
     <section className="audience-why audience-why--in-hero" aria-labelledby="audience-why-title">
       <div className="lp-section__inner">
@@ -20,17 +40,30 @@ export function AudienceWhy() {
         <p className="audience-why__title">口元のくすみに、まず試せる一手</p>
         <div className="lp-card audience-why__card">
           <ul className="audience-why__list audience-why__list--moments" aria-label="気になる瞬間の例">
-            {MOMENTS.map((line, i) => (
-              <li key={i} className="audience-why__item">
-                {line}
+            {MOMENTS.map((moment) => (
+              <li key={moment.title} className="audience-why__item">
+                <span className="audience-why__check" aria-hidden="true">
+                  ✓
+                </span>
+                <span className="audience-why__copy">
+                  <span className="audience-why__item-title">{moment.title}</span>
+                  <span className="audience-why__item-body">{moment.body}</span>
+                </span>
               </li>
             ))}
           </ul>
-          <p className="audience-why__pillar u-rhythm">
-            表面の着色を落とす。
-            <br />
-            本来の明るさに、近づける。
-          </p>
+          <div className="audience-why__cta">
+            <CTAButton href={LINE_RESERVE_URL} ariaLabel={CTA_PURPOSE_ARIA}>
+              <span className="cta-btn__stack">
+                {buttonLines.map((line) => (
+                  <span className="cta-btn__line" key={line}>
+                    {line}
+                  </span>
+                ))}
+              </span>
+            </CTAButton>
+            <p className="audience-why__cta-note">相談無料・無理な勧誘はいたしません。</p>
+          </div>
         </div>
       </div>
     </section>
