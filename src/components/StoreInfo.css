@@ -95,7 +95,8 @@
 }
 
 .store__photo {
-  margin: var(--space-24) 0 0;
+  max-width: min(100%, 320px);
+  margin: var(--space-24) auto 0;
 }
 
 .store__photo-img {
