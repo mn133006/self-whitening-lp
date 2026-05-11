@@ -1,0 +1,11 @@
+.salon-gallery {
+  padding-top: var(--space-24);
+  background: var(--color-base);
+}
+
+.salon-gallery__label {
+  margin: 0 0 var(--space-16);
+  text-align: center;
+  font-weight: var(--fw-heading);
+  letter-spacing: var(--ls);
+}

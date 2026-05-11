@@ -1,7 +1,5 @@
 import { AudienceWhy } from './AudienceWhy';
-import { HeroSalonCarousel } from './HeroSalonCarousel';
 import { LINE_RESERVE_URL } from '../config/links';
-import { SALON_GALLERY_PHOTOS } from '../data/salonGalleryPhotos';
 import './Hero.css';
 
 export function Hero() {
@@ -21,11 +19,6 @@ export function Hero() {
       <div className="hero__inner">
         <p className="hero__sub">まずは1回、目安30〜45分で体験できます</p>
         <AudienceWhy />
-
-        <div className="hero__visual" aria-label="店内・施術の写真">
-          <p className="hero__visual-label lp-caption">店内のようす</p>
-          <HeroSalonCarousel photos={SALON_GALLERY_PHOTOS} />
-        </div>
       </div>
     </section>
   );

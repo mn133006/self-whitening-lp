@@ -7,6 +7,7 @@ import { GuidePop } from './components/GuidePop';
 import { Hero } from './components/Hero';
 import { MidCTA } from './components/MidCTA';
 import { Pricing } from './components/Pricing';
+import { SalonGallery } from './components/SalonGallery';
 import { ServiceFlow } from './components/ServiceFlow';
 import { WhiteningSteps } from './components/WhiteningSteps';
 import { WhiteningDiagnosis } from './components/WhiteningDiagnosis';
@@ -32,13 +33,14 @@ function App() {
       </a>
       <main>
         <Hero />
+        <Pricing />
+        <WhiteningDiagnosis />
+        <SalonGallery />
         <GuidePop />
         <SalonDifference />
         <BeforeAfter />
         <WhiteningSteps />
         <ServiceFlow />
-        <Pricing />
-        <WhiteningDiagnosis />
         <MidCTA />
         <FAQ />
         <FinalCTA />
