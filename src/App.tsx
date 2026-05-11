@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { SalonDifference } from './components/SalonDifference';
 import { BeforeAfter } from './components/BeforeAfter';
 import { FAQ } from './components/FAQ';
@@ -25,6 +25,18 @@ function App() {
     const onHashChange = () => scrollToHashTarget();
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  useEffect(() => {
+    const preventDefault = (event: Event) => event.preventDefault();
+
+    document.addEventListener('contextmenu', preventDefault);
+    document.addEventListener('dragstart', preventDefault);
+
+    return () => {
+      document.removeEventListener('contextmenu', preventDefault);
+      document.removeEventListener('dragstart', preventDefault);
+    };
   }, []);
 
   return (

@@ -30,7 +30,16 @@
 }
 
 .hero-salon-carousel__fig {
+  position: relative;
   margin: 0;
+}
+
+.hero-salon-carousel__fig::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: var(--radius-card);
 }
 
 .hero-salon-carousel__img {
