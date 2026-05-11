@@ -42,10 +42,10 @@ export function WhiteningDiagnosis() {
             </ul>
           </article>
 
-          <article className="diagnosis__card lp-card" aria-label="医療ホワイトニングがおすすめの方">
+          <article className="diagnosis__card lp-card" aria-label="歯科提携ホワイトニングがおすすめの方">
             <h3 className="diagnosis__card-title">
               <ShieldCheck size={18} aria-hidden="true" />
-              <span>医療ホワイトニングがおすすめの方</span>
+              <span>歯科提携ホワイトニングがおすすめの方</span>
             </h3>
             <ul className="diagnosis__list">
               {MEDICAL_POINTS.map((point) => (
