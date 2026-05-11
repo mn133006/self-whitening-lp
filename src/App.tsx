@@ -15,7 +15,6 @@ import { WhiteningDiagnosis } from './components/WhiteningDiagnosis';
 import { StickyCTA } from './components/StickyCTA';
 import { StoreInfo } from './components/StoreInfo';
 import { LINE_RESERVE_URL } from './config/links';
-import { SECTION_NAV_ITEMS } from './config/sectionNav';
 import { bindHashFragmentScroll, scrollToHashTarget } from './scrollToHash';
 import './App.css';
 
@@ -62,19 +61,6 @@ function App() {
         <StoreInfo />
       </main>
       <footer className="site-footer">
-        <details className="site-footer__menu">
-          <summary className="site-footer__menu-button">メニュー</summary>
-          <nav className="site-footer__nav" aria-label="フッターメニュー">
-            <a className="site-footer__nav-link" href="#top">
-              トップ
-            </a>
-            {SECTION_NAV_ITEMS.map((item) => (
-              <a className="site-footer__nav-link" href={item.href} key={item.href}>
-                {item.label}
-              </a>
-            ))}
-          </nav>
-        </details>
         <p className="site-footer__meta">
           <a className="site-footer__link" href={LINE_RESERVE_URL}>
             LINE公式アカウント
