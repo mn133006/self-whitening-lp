@@ -3,13 +3,17 @@
   text-align: center;
 }
 
+.cta-btn__line {
+  display: block;
+}
+
 .cta-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 100%;
-  min-height: 56px;
+  min-height: 64px;
   padding: 0 var(--space-24);
   border-radius: 9999px;
   font-family: var(--font-sans);
@@ -23,7 +27,7 @@
     transform 0.18s ease,
     box-shadow 0.18s ease,
     background 0.18s ease;
-  white-space: nowrap;
+  white-space: normal;
   line-break: strict;
 }
 

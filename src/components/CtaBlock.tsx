@@ -32,12 +32,24 @@ export function CtaBlock({
   microLines = CTA_MICRO_DEFAULT,
 }: Props) {
   const v = variant === 'inverse' ? 'inverse' : variant === 'compact' ? 'compact' : '';
+  const buttonLines = buttonLabel.split('\n');
+
   return (
     <div className={`cta-block${v ? ` cta-block--${v}` : ''} ${className}`.trim()}>
       <p className="cta-block__reason">{reason}</p>
       {urgency ? <p className="cta-block__urgency">{urgency}</p> : null}
       <CTAButton href={LINE_RESERVE_URL} ariaLabel={buttonAriaLabel}>
-        {buttonLabel}
+        {buttonLines.length > 1 ? (
+          <span className="cta-btn__stack">
+            {buttonLines.map((line) => (
+              <span className="cta-btn__line" key={line}>
+                {line}
+              </span>
+            ))}
+          </span>
+        ) : (
+          buttonLabel
+        )}
       </CTAButton>
       {microLines.length > 0 ? (
         <div className="cta-block__micro">

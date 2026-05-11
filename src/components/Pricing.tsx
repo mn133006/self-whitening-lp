@@ -34,7 +34,10 @@ export function Pricing() {
               <p className="pricing__subcaption lp-caption">合わなければここで終了OK、まずは気軽に1回お試しください</p>
             </div>
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
-              LINEでいますぐ確認
+              <span className="pricing__cta-stack">
+                <span>まずは初回1900円で体験してみる</span>
+                <span>LINEでいますぐ確認</span>
+              </span>
             </a>
           </section>
 
@@ -104,7 +107,10 @@ export function Pricing() {
             </div>
 
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
-              LINEでいますぐ確認
+              <span className="pricing__cta-stack">
+                <span>まずは初回1900円で体験してみる</span>
+                <span>LINEでいますぐ確認</span>
+              </span>
             </a>
           </section>
 
