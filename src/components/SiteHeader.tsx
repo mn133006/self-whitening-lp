@@ -1,18 +1,6 @@
 import { LINE_RESERVE_URL } from '../config/links';
+import { SECTION_NAV_ITEMS } from '../config/sectionNav';
 import './SiteHeader.css';
-
-const NAV_ITEMS = [
-  { href: '#price', label: '料金' },
-  { href: '#diagnosis', label: '選び方' },
-  { href: '#salon-gallery', label: '店内' },
-  { href: '#guide', label: 'ガイド' },
-  { href: '#salon-diff', label: '特徴' },
-  { href: '#before-after', label: '変化' },
-  { href: '#whitening-steps', label: '施術' },
-  { href: '#flow', label: '流れ' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#access', label: 'アクセス' },
-] as const;
 
 export function SiteHeader() {
   return (
@@ -22,7 +10,7 @@ export function SiteHeader() {
           CLEAR ROUTINE
         </a>
         <nav className="site-header__nav" aria-label="ページ内ナビゲーション">
-          {NAV_ITEMS.map((item) => (
+          {SECTION_NAV_ITEMS.map((item) => (
             <a className="site-header__nav-link" href={item.href} key={item.href}>
               {item.label}
             </a>
