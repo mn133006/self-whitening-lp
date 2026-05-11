@@ -73,10 +73,10 @@ export function StoreInfo() {
         <figure className="store__photo">
           <img
             className="store__photo-img"
-            src="/store-exterior.png"
+            src="/store-exterior.jpg"
             alt="CLEAR ROUTINE 店舗の外観。白い外壁の建物のガラス入口。"
-            width={1024}
-            height={768}
+            width={768}
+            height={1024}
             loading="lazy"
             decoding="async"
           />
