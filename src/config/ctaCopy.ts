@@ -1,12 +1,10 @@
 /** LP全体で統一するCTA（軽く問い合わせる導線を最優先） */
-export const CTA_PURPOSE_LABEL = 'LINEで空きと、所要の目安を確認する';
-export const CTA_PURPOSE_ARIA =
-  'LINEで空きと、所要の目安を確認する（外部サイトへ移動）';
+export const CTA_PURPOSE_LABEL = 'LINEでいますぐ確認';
+export const CTA_PURPOSE_ARIA = 'LINEでいますぐ確認（外部サイトへ移動）';
 
 /** 固定バーは短く、意味は同一 */
-export const CTA_STICKY_LABEL = 'LINEで空きと、所要の目安を確認する';
-export const CTA_STICKY_ARIA =
-  'LINEで空きと、所要の目安を確認する（外部サイトへ移動）';
+export const CTA_STICKY_LABEL = 'LINEでいますぐ確認';
+export const CTA_STICKY_ARIA = 'LINEでいますぐ確認（外部サイトへ移動）';
 
 /** CTA直下の補足（未指定時は非表示） */
 export const CTA_MICRO_DEFAULT: readonly string[] = [];

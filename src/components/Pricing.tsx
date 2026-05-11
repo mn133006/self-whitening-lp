@@ -34,7 +34,7 @@ export function Pricing() {
               <p className="pricing__subcaption lp-caption">合わなければここで終了OK、まずは気軽に1回お試しください</p>
             </div>
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
-              LINEで空き状況と目安を確認する
+              LINEでいますぐ確認
             </a>
           </section>
 
@@ -104,7 +104,7 @@ export function Pricing() {
             </div>
 
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
-              LINEで空き状況と目安を確認する
+              LINEでいますぐ確認
             </a>
           </section>
 
