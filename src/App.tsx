@@ -9,6 +9,7 @@ import { MidCTA } from './components/MidCTA';
 import { Pricing } from './components/Pricing';
 import { SalonGallery } from './components/SalonGallery';
 import { ServiceFlow } from './components/ServiceFlow';
+import { SiteHeader } from './components/SiteHeader';
 import { WhiteningSteps } from './components/WhiteningSteps';
 import { WhiteningDiagnosis } from './components/WhiteningDiagnosis';
 import { StickyCTA } from './components/StickyCTA';
@@ -31,6 +32,7 @@ function App() {
       <a className="skip-link" href="#top">
         本文へスキップ
       </a>
+      <SiteHeader />
       <main>
         <Hero />
         <Pricing />

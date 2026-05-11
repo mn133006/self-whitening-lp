@@ -2,7 +2,7 @@ import './GuidePop.css';
 
 export function GuidePop() {
   return (
-    <section className="guide-pop lp-section lp-section--tint" aria-labelledby="guide-pop-title">
+    <section className="guide-pop lp-section lp-section--tint" id="guide" aria-labelledby="guide-pop-title">
       <div className="lp-section__inner guide-pop__inner">
         <h2 className="lp-h2" id="guide-pop-title">
           はじめての方向けガイド

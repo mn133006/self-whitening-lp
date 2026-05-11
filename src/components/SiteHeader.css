@@ -1,0 +1,118 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgb(255 255 255 / 0.92);
+  border-bottom: 1px solid rgb(229 231 235 / 0.9);
+  box-shadow: 0 1px 12px rgb(15 23 42 / 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.site-header__inner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-8);
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0.55rem var(--section-pad-x);
+}
+
+.site-header__brand,
+.site-header__reserve,
+.site-header__nav-link {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header__brand {
+  color: var(--color-text);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+
+.site-header__nav {
+  display: flex;
+  gap: 0.35rem;
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.site-header__nav::-webkit-scrollbar {
+  display: none;
+}
+
+.site-header__nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0.35rem 0.68rem;
+  border-radius: 999px;
+  color: var(--color-muted);
+  font-size: 0.75rem;
+}
+
+.site-header__nav-link:hover,
+.site-header__nav-link:focus-visible {
+  color: var(--color-accent);
+  background: rgb(59 130 246 / 0.08);
+  outline: none;
+}
+
+.site-header__reserve {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0.35rem 0.78rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  box-shadow: 0 4px 14px rgb(59 130 246 / 0.24);
+}
+
+.site-header__reserve:hover,
+.site-header__reserve:focus-visible {
+  background: var(--color-primary-hover);
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .site-header__inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    row-gap: 0.4rem;
+  }
+
+  .site-header__brand {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .site-header__nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0 calc(-1 * var(--section-pad-x));
+    padding: 0 var(--section-pad-x);
+  }
+}
+
+@media (min-width: 900px) {
+  .site-header__inner {
+    gap: var(--space-16);
+  }
+
+  .site-header__nav {
+    justify-content: center;
+  }
+}

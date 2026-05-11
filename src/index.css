@@ -60,6 +60,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
 }
 
 @media (min-width: 900px) {
@@ -216,6 +217,10 @@ h3 {
 
 .lp-section {
   padding: var(--section-pad-y) var(--section-pad-x);
+}
+
+[id] {
+  scroll-margin-top: 5.5rem;
 }
 
 .lp-section--tint {

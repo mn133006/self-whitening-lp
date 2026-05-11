@@ -16,8 +16,10 @@ export function scrollToHashTarget(): boolean {
   const el = document.getElementById(id);
   if (!(el instanceof HTMLElement)) return false;
 
+  const header = document.querySelector('.site-header');
+  const headerOffset = header instanceof HTMLElement ? header.offsetHeight + 12 : 0;
   const top = el.getBoundingClientRect().top + window.scrollY;
-  window.scrollTo({ top, left: 0, behavior: 'auto' });
+  window.scrollTo({ top: Math.max(0, top - headerOffset), left: 0, behavior: 'auto' });
   return true;
 }
 

@@ -18,7 +18,7 @@ const MEDICAL_POINTS = [
 
 export function WhiteningDiagnosis() {
   return (
-    <section className="diagnosis lp-section" aria-labelledby="diagnosis-title">
+    <section className="diagnosis lp-section" id="diagnosis" aria-labelledby="diagnosis-title">
       <div className="lp-section__inner">
         <h2 className="lp-h2" id="diagnosis-title">
           あなたに合うホワイトニング診断

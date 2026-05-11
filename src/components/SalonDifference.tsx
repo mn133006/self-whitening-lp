@@ -21,7 +21,7 @@ const POINTS = [
 
 export function SalonDifference() {
   return (
-    <section className="salon-diff lp-section" aria-labelledby="salon-diff-title">
+    <section className="salon-diff lp-section" id="salon-diff" aria-labelledby="salon-diff-title">
       <div className="lp-section__inner">
         <h2 className="lp-h2 lp-h2--split" id="salon-diff-title">
           <span className="lp-h2__en" lang="en">

@@ -20,7 +20,7 @@ const STEPS = [
 
 export function ServiceFlow() {
   return (
-    <section className="flow lp-section lp-section--tint" aria-labelledby="flow-title">
+    <section className="flow lp-section lp-section--tint" id="flow" aria-labelledby="flow-title">
       <div className="lp-section__inner">
         <h2 className="lp-h2 lp-h2--split" id="flow-title">
           <span className="lp-h2__en" lang="en">
