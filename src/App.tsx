@@ -47,11 +47,11 @@ function App() {
       <SiteHeader />
       <main>
         <Hero />
+        <SalonDifference />
         <Pricing />
         <WhiteningDiagnosis />
         <SalonGallery />
         <GuidePop />
-        <SalonDifference />
         <BeforeAfter />
         <WhiteningSteps />
         <ServiceFlow />
