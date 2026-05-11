@@ -62,16 +62,19 @@ function App() {
         <StoreInfo />
       </main>
       <footer className="site-footer">
-        <nav className="site-footer__nav" aria-label="フッターメニュー">
-          <a className="site-footer__nav-link" href="#top">
-            トップ
-          </a>
-          {SECTION_NAV_ITEMS.map((item) => (
-            <a className="site-footer__nav-link" href={item.href} key={item.href}>
-              {item.label}
+        <details className="site-footer__menu">
+          <summary className="site-footer__menu-button">メニュー</summary>
+          <nav className="site-footer__nav" aria-label="フッターメニュー">
+            <a className="site-footer__nav-link" href="#top">
+              トップ
             </a>
-          ))}
-        </nav>
+            {SECTION_NAV_ITEMS.map((item) => (
+              <a className="site-footer__nav-link" href={item.href} key={item.href}>
+                {item.label}
+              </a>
+            ))}
+          </nav>
+        </details>
         <p className="site-footer__meta">
           <a className="site-footer__link" href={LINE_RESERVE_URL}>
             LINE公式アカウント
