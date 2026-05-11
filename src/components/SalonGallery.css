@@ -9,3 +9,8 @@
   font-weight: var(--fw-heading);
   letter-spacing: var(--ls);
 }
+
+.salon-gallery .hero-salon-carousel {
+  max-width: min(100%, 420px);
+  margin: 0 auto;
+}
