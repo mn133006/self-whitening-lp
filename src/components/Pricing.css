@@ -152,14 +152,191 @@
   max-width: 36em;
 }
 
-/* 狭い幅：写真列だけ少し細くする */
+/* 狭い幅：初回バナーを中心にタイポ・改行バランスを調整、その他カードも詰めをやわらげる */
 @media (max-width: 639px) {
+  .pricing__phase {
+    padding: 0.875rem;
+    gap: 0.65rem;
+  }
+
+  .pricing__phase-step {
+    font-size: 0.875rem;
+    letter-spacing: 0.03em;
+  }
+
+  .pricing__category-title {
+    font-size: clamp(0.94rem, 3.8vw + 0.48rem, 1.0625rem);
+    padding: 0 0 0.5rem;
+  }
+
+  .pricing__card {
+    padding: 0.8125rem;
+  }
+
+  .pricing__groups {
+    gap: var(--space-24);
+  }
+
+  /* テキスト列をやや広く、写真を詰める */
   .pricing__card--intro-banner {
-    grid-template-columns: minmax(0, 1fr) max(32%, 7rem);
+    grid-template-columns: minmax(0, 1fr) minmax(6.125rem, 28vw);
+    border-radius: 12px;
   }
 
   .pricing__intro-banner-body {
-    padding: 0.55rem 0.58rem 0.55rem 0.65rem;
+    gap: 0.3rem;
+    padding: 0.48rem 0.42rem 0.48rem 0.52rem;
+  }
+
+  .pricing__card--intro-banner .pricing__tag {
+    font-size: 0.656rem;
+    padding: 0.125rem 0.38rem;
+    line-height: 1.35;
+    max-width: 100%;
+    box-decoration-break: clone;
+  }
+
+  /* 名前と料金が横にキツいので縦に分ける */
+  .pricing__card--intro-banner .pricing__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.0625rem;
+    margin-top: 0;
+  }
+
+  .pricing__card--intro-banner .pricing__name {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .pricing__card--intro-banner .pricing__amount--intro {
+    margin-top: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 0.0625rem;
+    column-gap: 0.28em;
+  }
+
+  .pricing__card--intro-banner .pricing__was {
+    font-size: 0.76rem;
+  }
+
+  .pricing__card--intro-banner .pricing__price-sep {
+    font-size: 0.7rem;
+  }
+
+  .pricing__card--intro-banner .pricing__price-now {
+    font-size: clamp(1.02rem, 4.75vw + 0.52rem, 1.35rem);
+  }
+
+  .pricing__card--intro-banner .pricing__duration {
+    margin-top: 0.15rem;
+    font-size: 0.6425rem;
+    line-height: 1.45;
+    padding: 0.14rem 0.36rem;
+    text-wrap: balance;
+    align-self: flex-start;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .pricing__phase--entry .pricing__intro-follow {
+    font-size: 0.8rem;
+    line-height: 1.55;
+    text-wrap: balance;
+  }
+
+  .pricing__row {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    row-gap: 0.125rem;
+  }
+
+  .pricing__name {
+    font-size: 0.834rem;
+    line-height: 1.38;
+  }
+
+  .pricing__amount {
+    font-size: clamp(0.97rem, 2.95vw + 0.72rem, 1.155rem);
+  }
+
+  .pricing__phase--single .pricing__block-title {
+    font-size: 0.85rem;
+    line-height: 1.35;
+  }
+
+  .pricing__phase--single .pricing__amount {
+    font-size: clamp(0.94rem, 2.5vw + 0.72rem, 1.08rem);
+  }
+
+  .pricing__block-title {
+    font-size: 0.8925rem;
+  }
+
+  .pricing__duration {
+    font-size: 0.7rem;
+    padding: 0.16rem 0.4rem;
+    line-height: 1.45;
+    text-wrap: balance;
+    white-space: normal;
+  }
+
+  .pricing__duration--option {
+    margin-top: 0.25rem;
+  }
+
+  .pricing__subcaption {
+    font-size: 0.805rem;
+    line-height: 1.52;
+    text-wrap: balance;
+  }
+
+  .pricing__course-spec,
+  .pricing__premium-detail {
+    font-size: 0.7625rem;
+    line-height: 1.45;
+    gap: 0.18rem;
+    padding-left: 1em;
+  }
+
+  .pricing__vertical-list {
+    gap: 0.3rem;
+  }
+
+  .pricing__line-item {
+    gap: 0.16rem;
+    padding: 0.3rem 0.55rem;
+  }
+
+  .pricing__total-price {
+    font-size: clamp(0.94rem, 2.35vw + 0.72rem, 1.18rem);
+  }
+
+  .pricing__per-price {
+    font-size: 0.7525rem;
+    line-height: 1.36;
+    text-wrap: balance;
+  }
+
+  .pricing__option-title {
+    font-size: 0.7925rem;
+  }
+
+  .pricing__option {
+    padding: 0.515rem 0.58rem;
+  }
+
+  .pricing__notes {
+    font-size: 0.7925rem;
+    line-height: 1.62;
+    padding-left: 1.05em;
+    gap: 0.28rem;
+  }
+
+  .pricing__badge,
+  .pricing__item-badge {
+    font-size: 0.6975rem;
   }
 }
 
