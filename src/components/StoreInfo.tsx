@@ -56,7 +56,7 @@ export function StoreInfo() {
             <div className="store__info-row">
               <dt className="store__info-label">駐車場</dt>
               <dd className="store__info-value">
-                <span>12台</span>
+                <span>12台（建物裏）</span>
                 <span className="store__info-sub">バス停（松橋高校前）は目の前です</span>
               </dd>
             </div>
