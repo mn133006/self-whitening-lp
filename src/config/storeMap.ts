@@ -1,5 +1,5 @@
 /** 公開住所（ナビ入力用フォールバック） */
-export const STORE_ADDRESS_LINE = '869-0532 熊本県宇城市松橋町久具302-1';
+export const STORE_ADDRESS_LINE = '869-0532 熊本県宇城市松橋町久具301-2';
 
 /**
  * Google マップ検索クエリ。
