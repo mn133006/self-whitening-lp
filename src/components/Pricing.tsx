@@ -22,18 +22,13 @@ export function Pricing() {
               <img
                 className="pricing__intro-card-full-img"
                 src="/pricing-intro-card-full.svg"
-                alt="初回体験。通常4,900円が初回限定で1,900円。所要時間は目安60分（カウンセリング込み）。"
+                alt="初回体験。通常4,900円が初回限定で1,900円。所要時間は目安60分（カウンセリング込み）。合わなければここで終了OK、まずは気軽に1回お試しください。"
                 width={1200}
-                height={540}
+                height={640}
                 loading="lazy"
                 decoding="async"
               />
             </figure>
-            <p className="pricing__intro-follow lp-caption">
-              合わなければここで終了OK、まずは
-              <br className="br-sm-only" aria-hidden="true" />
-              気軽に1回お試しください
-            </p>
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
               <span className="pricing__cta-stack">
                 <span>まずは初回1900円で体験</span>

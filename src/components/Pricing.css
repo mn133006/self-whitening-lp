@@ -94,17 +94,8 @@
   height: auto;
 }
 
-.pricing__phase--entry .pricing__intro-follow {
-  margin: 0;
-  color: var(--color-muted);
-  font-size: 0.86rem;
-  line-height: 1.5;
-  max-width: 36em;
-}
-
 /* 短文・ラベル：行の段差を抑える（pretty → 未対応は balance） */
 .pricing .pricing__subcaption,
-.pricing .pricing__intro-follow,
 .pricing .pricing__duration,
 .pricing .pricing__per-price {
   text-wrap: pretty;
@@ -112,7 +103,6 @@
 
 @supports not (text-wrap: pretty) {
   .pricing .pricing__subcaption,
-  .pricing .pricing__intro-follow,
   .pricing .pricing__duration,
   .pricing .pricing__per-price {
     text-wrap: balance;
@@ -168,11 +158,6 @@
   .pricing__subcaption {
     font-size: clamp(0.7575rem, 0.92cqw + 0.655rem, 0.81rem);
     line-height: 1.52;
-  }
-
-  .pricing__phase--entry .pricing__intro-follow {
-    font-size: clamp(0.7675rem, 0.9cqw + 0.6425rem, 0.81rem);
-    line-height: 1.55;
   }
 
   .pricing__course-spec,
@@ -254,11 +239,6 @@
     .pricing__phase-step {
       font-size: 0.875rem;
       letter-spacing: 0.03em;
-    }
-
-    .pricing__phase--entry .pricing__intro-follow {
-      font-size: 0.8rem;
-      line-height: 1.55;
     }
 
     .pricing__row {
