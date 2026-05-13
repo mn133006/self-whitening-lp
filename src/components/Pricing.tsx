@@ -18,37 +18,17 @@ export function Pricing() {
             <div className="pricing__stack">
           <section className="pricing__phase pricing__phase--entry" aria-label="初回体験">
             <p className="pricing__phase-step">1. 初回体験</p>
-            <div className="pricing__card pricing__card--intro pricing__card--intro-banner">
-              <div className="pricing__intro-banner-body">
-                <p className="pricing__tag">初回限定 / 体験価格</p>
-                <div className="pricing__row">
-                  <p className="pricing__name">初回体験</p>
-                  <p className="pricing__amount pricing__amount--intro">
-                    <span className="pricing__was">4,900円</span>
-                    <span className="pricing__price-sep" aria-hidden="true">
-                      →
-                    </span>
-                    <span className="pricing__price-now">1,900円</span>
-                  </p>
-                </div>
-                <p className="pricing__duration">
-                  所要時間：目安60分
-                  <br className="br-sm-only" aria-hidden="true" />
-                  （カウンセリング込み）
-                </p>
-              </div>
-              <div className="pricing__intro-banner-media" aria-hidden="true">
-                <img
-                  className="pricing__intro-banner-img"
-                  src="/pricing-intro-card-vertical.webp"
-                  alt=""
-                  width={928}
-                  height={1024}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            </div>
+            <figure className="pricing__card pricing__card--intro pricing__card--intro-banner">
+              <img
+                className="pricing__intro-card-full-img"
+                src="/pricing-intro-card-full.svg"
+                alt="初回体験。通常4,900円が初回限定で1,900円。所要時間は目安60分（カウンセリング込み）。"
+                width={1200}
+                height={800}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
             <p className="pricing__intro-follow lp-caption">
               合わなければここで終了OK、まずは
               <br className="br-sm-only" aria-hidden="true" />
