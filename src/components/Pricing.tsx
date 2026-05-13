@@ -24,7 +24,7 @@ export function Pricing() {
                 src="/pricing-intro-card-full.svg"
                 alt="初回体験。通常4,900円が初回限定で1,900円。所要時間は目安60分（カウンセリング込み）。合わなければここで終了OK、まずは気軽に1回お試しください。"
                 width={1200}
-                height={640}
+                height={540}
                 loading="lazy"
                 decoding="async"
               />
