@@ -132,8 +132,7 @@
   margin: 0;
 }
 
-.pricing__card--intro-banner .pricing__duration,
-.pricing__card--intro-banner .lp-caption {
+.pricing__card--intro-banner .pricing__duration {
   margin: 0;
   line-height: 1.45;
 }
@@ -142,6 +141,15 @@
   font-size: clamp(1.1rem, 3.05vw, 1.68rem);
   color: var(--color-primary);
   text-shadow: 0 1px 0 rgb(255 255 255 / 0.9);
+}
+
+/* 枠線カード外の補足（カード内テキストを減らして左右の高さ差を抑える） */
+.pricing__phase--entry .pricing__intro-follow {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  max-width: 36em;
 }
 
 /* 狭い幅：写真列だけ少し細くする */

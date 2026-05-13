@@ -32,7 +32,6 @@ export function Pricing() {
                   </p>
                 </div>
                 <p className="pricing__duration">所要時間：目安60分（カウンセリング込み）</p>
-                <p className="pricing__subcaption lp-caption">合わなければここで終了OK、まずは気軽に1回お試しください</p>
               </div>
               <div className="pricing__intro-banner-media" aria-hidden="true">
                 <img
@@ -46,6 +45,9 @@ export function Pricing() {
                 />
               </div>
             </div>
+            <p className="pricing__intro-follow lp-caption">
+              合わなければここで終了OK、まずは気軽に1回お試しください
+            </p>
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
               <span className="pricing__cta-stack">
                 <span>まずは初回1900円で体験</span>
