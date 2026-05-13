@@ -46,8 +46,8 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   </g>
   <rect x="56" y="304" width="664" height="72" rx="36" fill="rgb(219,234,254)" stroke="rgb(147,197,253)" stroke-opacity="0.7" stroke-width="1.5"/>
   <text x="388" y="350" text-anchor="middle" font-family="${FONT}" font-size="28" font-weight="600" fill="rgb(30,58,138)">所要時間：目安60分（カウンセリング込み）</text>
-  <text x="56" y="398" font-family="${FONT}" font-size="20" font-weight="500" fill="rgb(100,116,139)">合わなければここで終了OK、</text>
-  <text x="56" y="424" font-family="${FONT}" font-size="20" font-weight="500" fill="rgb(100,116,139)">まずは気軽に1回お試しください</text>
+  <text x="56" y="448" font-family="${FONT}" font-size="20" font-weight="500" fill="rgb(100,116,139)">合わなければここで終了OK、</text>
+  <text x="56" y="478" font-family="${FONT}" font-size="20" font-weight="500" fill="rgb(100,116,139)">まずは気軽に1回お試しください</text>
 </svg>
 `;
 
