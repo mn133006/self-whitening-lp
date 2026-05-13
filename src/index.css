@@ -38,7 +38,8 @@
   --text-measure: min(100%, 36em);
   --heading-measure: min(100%, 22rem);
 
-  --sticky-cta-reserve: calc(5rem + env(safe-area-inset-bottom, 0px));
+  /* 固定CTA＋補足行ぶん。小さいと料金表などがバーに隠れる */
+  --sticky-cta-reserve: calc(6.85rem + env(safe-area-inset-bottom, 0px));
 
   --radius-card: 16px;
 

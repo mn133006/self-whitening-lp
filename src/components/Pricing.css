@@ -143,6 +143,17 @@
   text-shadow: 0 1px 0 rgb(255 255 255 / 0.9);
 }
 
+/* 狭い幅：写真列を少し細くして左テキストに余裕（横並びは維持） */
+@media (max-width: 639px) {
+  .pricing__intro-banner-media {
+    width: max(32%, 7rem);
+  }
+
+  .pricing__intro-banner-body {
+    padding: 0.55rem 0.58rem 0.55rem 0.65rem;
+  }
+}
+
 @media (min-width: 640px) {
   .pricing__intro-banner-media {
     width: max(40%, 11rem);
@@ -444,6 +455,13 @@
 
 .pricing__cta:hover {
   filter: brightness(1.04);
+}
+
+/* スマホは下部 StickyCTA と同じ文言のため二重に見える → インラインは非表示（900px以上は Sticky 無しで表示） */
+@media (max-width: 899px) {
+  .pricing__cta {
+    display: none;
+  }
 }
 
 .pricing__closing {
