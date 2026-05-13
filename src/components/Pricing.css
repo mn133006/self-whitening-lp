@@ -139,6 +139,14 @@
 .pricing__card--intro-banner .pricing__duration {
   margin: 0;
   line-height: 1.45;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  max-width: 100%;
+}
+
+.pricing__card--intro-banner .pricing__duration .jp-nowrap-phrase {
+  white-space: normal;
 }
 
 .pricing__card--intro-banner .pricing__price-now {

@@ -32,7 +32,9 @@ export function Pricing() {
                   </p>
                 </div>
                 <p className="pricing__duration">
-                  所要時間：目安60分（<span className="jp-nowrap-phrase">カウンセリング込み</span>）
+                  所要時間：目安60分
+                  <br className="br-sm-only" aria-hidden="true" />
+                  （カウンセリング込み）
                 </p>
               </div>
               <div className="pricing__intro-banner-media" aria-hidden="true">
