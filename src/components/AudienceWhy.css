@@ -99,10 +99,14 @@
   border-radius: 999px;
   background: var(--color-primary);
   color: #fff;
-  font-size: 0.78rem;
-  font-weight: 800;
-  line-height: 1;
+  flex-shrink: 0;
   box-shadow: 0 4px 12px rgb(59 130 246 / 0.24);
+}
+
+.audience-why__check-icon {
+  display: block;
+  vertical-align: middle;
+  shape-rendering: geometricPrecision;
 }
 
 .audience-why__copy {

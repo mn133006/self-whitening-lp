@@ -18,24 +18,37 @@ export function Pricing() {
             <div className="pricing__stack">
           <section className="pricing__phase pricing__phase--entry" aria-label="初回体験">
             <p className="pricing__phase-step">1. 初回体験</p>
-            <div className="pricing__card pricing__card--intro">
-              <p className="pricing__tag">初回限定 / 体験価格</p>
-              <div className="pricing__row">
-                <p className="pricing__name">初回体験</p>
-                <p className="pricing__amount pricing__amount--intro">
-                  <span className="pricing__was">4,900円</span>
-                  <span className="pricing__price-sep" aria-hidden="true">
-                    →
-                  </span>
-                  <span className="pricing__price-now">1,900円</span>
-                </p>
+            <div className="pricing__card pricing__card--intro pricing__card--intro-banner">
+              <div className="pricing__intro-banner-body">
+                <p className="pricing__tag">初回限定 / 体験価格</p>
+                <div className="pricing__row">
+                  <p className="pricing__name">初回体験</p>
+                  <p className="pricing__amount pricing__amount--intro">
+                    <span className="pricing__was">4,900円</span>
+                    <span className="pricing__price-sep" aria-hidden="true">
+                      →
+                    </span>
+                    <span className="pricing__price-now">1,900円</span>
+                  </p>
+                </div>
+                <p className="pricing__duration">所要時間：目安60分（カウンセリング込み）</p>
+                <p className="pricing__subcaption lp-caption">合わなければここで終了OK、まずは気軽に1回お試しください</p>
               </div>
-              <p className="pricing__duration">所要時間：目安60分（カウンセリング込み）</p>
-              <p className="pricing__subcaption lp-caption">合わなければここで終了OK、まずは気軽に1回お試しください</p>
+              <div className="pricing__intro-banner-media" aria-hidden="true">
+                <img
+                  className="pricing__intro-banner-img"
+                  src="/pricing-intro-card-vertical.webp"
+                  alt=""
+                  width={928}
+                  height={1024}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
               <span className="pricing__cta-stack">
-                <span>まずは初回1900円で体験してみる</span>
+                <span>まずは初回1900円で体験</span>
                 <span>LINEでいますぐ確認</span>
               </span>
             </a>
@@ -108,7 +121,7 @@ export function Pricing() {
 
             <a className="pricing__cta" href={LINE_RESERVE_URL}>
               <span className="pricing__cta-stack">
-                <span>まずは初回1900円で体験してみる</span>
+                <span>まずは初回1900円で体験</span>
                 <span>LINEでいますぐ確認</span>
               </span>
             </a>
@@ -144,10 +157,23 @@ export function Pricing() {
               </ul>
               <div className="pricing__medical-plan">
                 <p className="pricing__option-title">セットプラン</p>
-                <div className="pricing__row">
-                  <p className="pricing__name">歯科提携3回コース</p>
-                  <p className="pricing__amount">18,000円</p>
-                </div>
+                <ul className="pricing__vertical-list pricing__vertical-list--in-medical-plan">
+                  <li className="pricing__line-item pricing__line-item--medical">
+                    <span className="pricing__name">3回</span>
+                    <span className="pricing__total-price">18,000円</span>
+                    <span className="pricing__per-price">1回あたり 6,000円</span>
+                  </li>
+                  <li className="pricing__line-item pricing__line-item--medical">
+                    <span className="pricing__name">5回</span>
+                    <span className="pricing__total-price">27,500円</span>
+                    <span className="pricing__per-price">1回あたり 5,500円</span>
+                  </li>
+                  <li className="pricing__line-item pricing__line-item--medical">
+                    <span className="pricing__name">10回</span>
+                    <span className="pricing__total-price">49,000円</span>
+                    <span className="pricing__per-price">1回あたり 4,900円</span>
+                  </li>
+                </ul>
                 <p className="pricing__duration pricing__duration--option">所要時間：目安60分／回</p>
               </div>
               <ul className="pricing__notes">

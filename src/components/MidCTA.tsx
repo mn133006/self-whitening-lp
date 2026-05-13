@@ -6,14 +6,17 @@ export function MidCTA() {
     <aside className="mid-cta lp-section lp-section--tint" aria-label="LINEで気になる点を聞く">
       <div className="lp-section__inner mid-cta__inner">
         <CtaBlock
+          className="cta-block--mid"
           reason={
             <>
-              迷っていること、
-              <br />
-              先に一回だけ聞いておく。
+              <span className="mid-cta__lead">
+                迷っていること、
+                <br />
+                先に一回だけ聞いておく。
+              </span>
+              <span className="mid-cta__sub">気になっているうちに、先に相談だけしておくと安心です。</span>
             </>
           }
-          urgency="気になっているうちに、先に相談だけしておくと安心です。"
         />
       </div>
     </aside>

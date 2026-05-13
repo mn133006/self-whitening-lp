@@ -1,22 +1,22 @@
 .pricing__groups {
   display: grid;
-  gap: var(--space-48);
+  gap: var(--space-32);
 }
 
 .pricing__category {
   display: grid;
-  gap: var(--space-24);
+  gap: var(--space-16);
   min-width: 0;
 }
 
 .pricing__category-title {
   margin: 0 auto;
-  padding: 0 0 var(--space-16);
+  padding: 0 0 0.625rem;
   max-width: var(--text-measure);
   width: 100%;
   text-align: center;
   font-family: var(--font-sans);
-  font-size: clamp(1.0625rem, 2.4vw + 0.55rem, 1.25rem);
+  font-size: clamp(1rem, 2.15vw + 0.52rem, 1.1875rem);
   font-weight: var(--fw-heading);
   line-height: var(--lh-heading);
   letter-spacing: var(--ls);
@@ -26,21 +26,21 @@
 
 .pricing__stack {
   display: grid;
-  gap: var(--space-24);
+  gap: var(--space-16);
 }
 
 .pricing__phase {
-  padding: var(--space-24);
+  padding: var(--space-16);
   border-radius: var(--radius-card);
   border: 1px solid var(--color-border);
   background: #fff;
   display: grid;
-  gap: var(--space-16);
+  gap: 0.75rem;
 }
 
 .pricing__phase-step {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: var(--fw-heading);
   color: var(--color-primary);
   letter-spacing: 0.04em;
@@ -60,7 +60,7 @@
 
 .pricing__card {
   margin: 0;
-  padding: 1.25rem;
+  padding: 1rem;
   border-radius: var(--radius-card);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-card);
@@ -72,9 +72,96 @@
   border-color: rgb(59 130 246 / 0.28);
 }
 
+/* 初回体験：左の余白を詰めてカード縦寸を縮める。写真は横幅100%+高さ自動（表示サイズは列幅のみで決まる） */
+.pricing__card--intro-banner {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0;
+  border: 2px solid rgb(59 130 246 / 0.45);
+  box-shadow:
+    0 12px 36px rgb(59 130 246 / 0.18),
+    var(--shadow-card);
+  background: linear-gradient(135deg, rgb(239 246 255 / 0.95) 0%, rgb(255 255 255 / 1) 55%);
+}
+
+.pricing__intro-banner-media {
+  position: relative;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  width: max(37%, 8.5rem);
+  min-width: 0;
+  line-height: 0;
+  border-left: 1px solid rgb(59 130 246 / 0.14);
+  overflow: hidden;
+  background: rgb(239 246 255);
+  padding: 0;
+}
+
+.pricing__intro-banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.pricing__intro-banner-body {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  min-width: 0;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  padding: 0.5rem min(3.5vw, 0.72rem);
+}
+
+.pricing__card--intro-banner .pricing__tag {
+  margin: 0 0 0.05rem;
+}
+
+.pricing__card--intro-banner .pricing__row {
+  margin-top: 0;
+}
+
+.pricing__card--intro-banner .pricing__amount--intro {
+  margin: 0;
+}
+
+.pricing__card--intro-banner .pricing__duration,
+.pricing__card--intro-banner .lp-caption {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.pricing__card--intro-banner .pricing__price-now {
+  font-size: clamp(1.1rem, 3.05vw, 1.68rem);
+  color: var(--color-primary);
+  text-shadow: 0 1px 0 rgb(255 255 255 / 0.9);
+}
+
+@media (min-width: 640px) {
+  .pricing__intro-banner-media {
+    width: max(40%, 11rem);
+  }
+
+  .pricing__intro-banner-body {
+    padding: 0.62rem 0.88rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .pricing__intro-banner-media {
+    width: max(36%, 12rem);
+  }
+}
+
 .pricing__card--ticket {
-  border: 3px solid var(--color-primary);
-  box-shadow: 0 16px 32px rgb(59 130 246 / 0.26);
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 12px 28px rgb(59 130 246 / 0.22);
   background: linear-gradient(160deg, rgb(219 234 254 / 1) 0%, rgb(239 246 255 / 1) 42%, rgb(255 255 255 / 1) 100%);
 }
 
@@ -99,8 +186,8 @@
 .pricing__badge {
   display: inline-flex;
   align-self: flex-start;
-  margin: 0 0 var(--space-8);
-  padding: 0.25rem 0.6rem;
+  margin: 0 0 0.35rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: var(--fw-heading);
@@ -120,14 +207,14 @@
 
 .pricing__block-title {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: var(--fw-heading);
   line-height: var(--lh-heading);
   color: var(--color-text);
 }
 
 .pricing__row {
-  margin-top: var(--space-8);
+  margin-top: 0.35rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -140,15 +227,15 @@
 
 .pricing__name {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: var(--fw-heading);
   line-height: var(--lh-heading);
   color: var(--color-text);
 }
 
 .pricing__amount {
-  margin: var(--space-8) 0 0;
-  font-size: clamp(1.125rem, 2.8vw, 1.45rem);
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.05rem, 2.6vw, 1.35rem);
   font-weight: 800;
   line-height: var(--lh-heading);
   color: var(--color-text);
@@ -175,47 +262,48 @@
 }
 
 .pricing__price-now {
-  font-size: clamp(1.25rem, 3.2vw, 1.75rem);
+  font-size: clamp(1.15rem, 3vw, 1.6rem);
   font-weight: 800;
   color: var(--color-text);
 }
 
 .pricing__subcaption {
-  margin: var(--space-8) 0 0;
+  margin: 0.35rem 0 0;
   color: var(--color-muted);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
 
 .pricing__duration {
   display: inline-flex;
   align-self: flex-start;
-  margin: var(--space-8) 0 0;
-  padding: 0.28rem 0.65rem;
+  margin: 0.35rem 0 0;
+  padding: 0.2rem 0.5rem;
   border-radius: 999px;
   border: 1px solid rgb(59 130 246 / 0.22);
   background: rgb(239 246 255 / 0.72);
   color: #1d4ed8;
-  font-size: 0.8rem;
+  font-size: 0.775rem;
   font-weight: var(--fw-heading);
   line-height: 1.45;
 }
 
 .pricing__duration--option {
-  margin-top: var(--space-8);
+  margin-top: 0.35rem;
 }
 
 .pricing__vertical-list {
   list-style: none;
-  margin: var(--space-16) 0 0;
+  margin: 0.65rem 0 0;
   padding: 0;
   display: grid;
-  gap: var(--space-8);
+  gap: 0.375rem;
 }
 
 .pricing__line-item {
   margin: 0;
-  padding: var(--space-8) var(--space-16);
-  border-radius: 12px;
+  padding: 0.375rem 0.75rem;
+  border-radius: 10px;
   border: 1px solid var(--color-border);
   background: #fff;
   display: grid;
@@ -239,8 +327,8 @@
 }
 
 .pricing__per-price {
-  margin: 0.15rem 0 0;
-  font-size: 0.82rem;
+  margin: 0.1rem 0 0;
+  font-size: 0.8rem;
   line-height: 1.35;
   font-weight: 500;
   color: var(--color-muted);
@@ -248,29 +336,29 @@
 
 .pricing__total-price {
   margin: 0;
-  font-size: clamp(1.1rem, 2.9vw, 1.5rem);
+  font-size: clamp(1.02rem, 2.6vw, 1.38rem);
   line-height: 1.2;
   font-weight: 800;
   color: #0f172a;
 }
 
 .pricing__option {
-  margin-top: var(--space-16);
-  padding: var(--space-16);
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.75rem;
   border: 1px dashed rgb(148 163 184 / 0.45);
-  border-radius: 12px;
+  border-radius: 10px;
   background: #f8fafc;
 }
 
 .pricing__option-title {
-  margin: 0 0 var(--space-8);
-  font-size: 0.875rem;
+  margin: 0 0 0.35rem;
+  font-size: 0.84rem;
   font-weight: var(--fw-heading);
   color: var(--color-text);
 }
 
 .pricing__course-spec {
-  margin: 0.45rem 0 0;
+  margin: 0.3rem 0 0;
   padding-left: 1.15em;
   display: grid;
   gap: 0.2rem;
@@ -279,7 +367,7 @@
 }
 
 .pricing__premium-detail {
-  margin: 0.45rem 0 0;
+  margin: 0.3rem 0 0;
   padding-left: 1.15em;
   display: grid;
   gap: 0.2rem;
@@ -293,13 +381,13 @@
 }
 
 .pricing__phase--single .pricing__block-title {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #334155;
 }
 
 .pricing__sub-grid {
   display: grid;
-  gap: var(--space-12);
+  gap: 0.75rem;
 }
 
 .pricing__line-item--medical {
@@ -308,15 +396,19 @@
 }
 
 .pricing__medical-plan {
-  margin-top: var(--space-16);
-  padding: var(--space-16);
-  border-radius: 12px;
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
   border: 1px solid rgb(59 130 246 / 0.25);
   background: rgb(59 130 246 / 0.05);
 }
 
+.pricing__medical-plan .pricing__vertical-list--in-medical-plan {
+  margin-top: 0;
+}
+
 .pricing__notes {
-  margin: var(--space-16) 0 0;
+  margin: 0.75rem 0 0;
   padding-left: 1.15em;
   display: grid;
   gap: 0.35rem;
@@ -329,16 +421,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 64px;
+  min-height: 52px;
   width: 100%;
   border-radius: 999px;
   background: linear-gradient(180deg, #60a5fa 0%, var(--color-primary) 50%, var(--color-primary-hover) 100%);
   color: #fff;
   text-decoration: none;
   font-weight: var(--fw-heading);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-align: center;
-  padding: 0.65rem 1rem;
+  padding: 0.5rem 0.9rem;
 }
 
 .pricing__cta-stack {
@@ -355,7 +447,7 @@
 }
 
 .pricing__closing {
-  margin: var(--space-32) auto 0;
+  margin: var(--space-24) auto 0;
   text-align: center;
 }
 

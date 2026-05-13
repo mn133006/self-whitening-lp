@@ -1,7 +1,26 @@
 .mid-cta__inner {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: var(--space-24);
+  align-items: stretch;
+}
+
+.mid-cta__lead {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.mid-cta__sub {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: var(--fw-body);
+  line-height: 1.58;
+  color: var(--color-muted);
+}
+
+.mid-cta .cta-block--mid .cta-block__reason {
+  max-width: min(var(--text-measure), 22rem);
+  font-size: clamp(0.8125rem, 2.1vw, 0.875rem);
+  line-height: 1.55;
+  text-align: center;
+  text-wrap: balance;
 }

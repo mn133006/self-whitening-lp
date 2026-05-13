@@ -2,6 +2,10 @@
   background: var(--color-base);
 }
 
+.diagnosis .lp-h2 {
+  text-align: center;
+}
+
 .diagnosis__lead {
   margin: 0 auto;
   text-align: center;

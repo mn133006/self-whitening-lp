@@ -300,6 +300,16 @@ h2 {
   justify-content: center;
 }
 
+.slide--diagnosis .slide__content {
+  text-align: center;
+}
+
+.slide--diagnosis .slide__content .lead {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 36em;
+}
+
 .slide__media--diagnosis {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -357,11 +367,11 @@ h2 {
 .slide--menu-balance .slide__media--menu {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.65vh 0.75vw;
+  gap: 0.45vh 0.52vw;
   align-content: start;
   align-items: stretch;
   min-height: 0;
-  padding: 1.35vh 0.95vw;
+  padding: 0.95vh 0.65vw;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-gutter: stable;
@@ -377,28 +387,29 @@ h2 {
 }
 
 .slide--menu-balance .slide__media--menu .price-card {
-  padding: 0.75vh 0.65vw;
+  padding: 0.5vh 0.48vw;
+  border-radius: 0.75vh;
 }
 
 .slide--menu-balance .slide__media--menu .price-card__title {
-  margin-bottom: 0.35vh;
-  font-size: clamp(0.98rem, 1vw, 1.28rem);
-  line-height: 1.25;
+  margin-bottom: 0.22vh;
+  font-size: clamp(0.9rem, 0.93vw, 1.14rem);
+  line-height: 1.22;
 }
 
 .slide--menu-balance .slide__media--menu .price-card__price {
-  margin-bottom: 0.25vh;
-  font-size: clamp(1.05rem, 1.15vw, 1.55rem);
+  margin-bottom: 0.15vh;
+  font-size: clamp(0.98rem, 1.02vw, 1.38rem);
 }
 
 .slide--menu-balance .slide__media--menu .price-card__cap {
-  margin: 0.12vh 0;
-  font-size: clamp(0.8rem, 0.8vw, 1.02rem);
-  line-height: 1.32;
+  margin: 0.06vh 0;
+  font-size: clamp(0.74rem, 0.74vw, 0.95rem);
+  line-height: 1.28;
 }
 
 .slide--menu-balance .slide__media--menu .price-card--intro .price-card__cap {
-  margin-top: 0.35vh;
+  margin-top: 0.22vh;
 }
 
 .step-player {
@@ -512,18 +523,18 @@ h2 {
 .price-card {
   border: 1px solid #dbeafe;
   background: #eff6ff;
-  border-radius: 1vh;
-  padding: 1.2vh 0.8vw;
+  border-radius: 0.85vh;
+  padding: 0.88vh 0.62vw;
 }
 
 
 .price-card + .price-card {
-  margin-top: 1vh;
+  margin-top: 0.65vh;
 }
 
 .price-card__title {
-  margin: 0 0 0.6vh;
-  font-size: clamp(1.1rem, 1.1vw, 1.45rem);
+  margin: 0 0 0.4vh;
+  font-size: clamp(1rem, 1vw, 1.32rem);
   font-weight: 700;
 }
 
@@ -531,7 +542,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   align-items: start;
-  row-gap: 0.35vh;
+  row-gap: 0.22vh;
 }
 
 .price-card--intro .price-card__title {
@@ -539,8 +550,8 @@ h2 {
 }
 
 .price-card__price {
-  margin: 0 0 0.5vh;
-  font-size: clamp(1.2rem, 1.35vw, 1.8rem);
+  margin: 0 0 0.34vh;
+  font-size: clamp(1.08rem, 1.2vw, 1.62rem);
 }
 
 .price-card--intro .price-card__price {
@@ -550,7 +561,7 @@ h2 {
 }
 
 .price-card--intro .price-card__cap {
-  margin-top: 0.6vh;
+  margin-top: 0.38vh;
 }
 
 .was {
@@ -559,9 +570,9 @@ h2 {
 }
 
 .price-card__cap {
-  margin: 0.22vh 0;
-  font-size: clamp(0.96rem, 0.96vw, 1.25rem);
-  line-height: 1.45;
+  margin: 0.14vh 0;
+  font-size: clamp(0.86rem, 0.88vw, 1.12rem);
+  line-height: 1.36;
 }
 
 .faq {

@@ -10,7 +10,7 @@ type Props = {
   variant?: Variant;
   className?: string;
   /** このブロックで伝える一行（行動理由） */
-  reason: ReactNode;
+  reason?: ReactNode;
   urgency?: ReactNode;
   /** ボタン表記（未指定時はサイト共通の目的型CTA） */
   buttonLabel?: string;
@@ -36,7 +36,7 @@ export function CtaBlock({
 
   return (
     <div className={`cta-block${v ? ` cta-block--${v}` : ''} ${className}`.trim()}>
-      <p className="cta-block__reason">{reason}</p>
+      {reason ? <p className="cta-block__reason">{reason}</p> : null}
       {urgency ? <p className="cta-block__urgency">{urgency}</p> : null}
       <CTAButton href={LINE_RESERVE_URL} ariaLabel={buttonAriaLabel}>
         {buttonLines.length > 1 ? (

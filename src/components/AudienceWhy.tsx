@@ -61,7 +61,15 @@ export function AudienceWhy() {
                 />
                 <div className="audience-why__copy-wrap">
                   <span className="audience-why__check" aria-hidden="true">
-                    ✓
+                    <svg className="audience-why__check-icon" width="14" height="11" viewBox="0 0 14 11" fill="none">
+                      <path
+                        d="M1 5.5L5 9.5L13 1"
+                        stroke="currentColor"
+                        strokeWidth="2.25"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </span>
                   <span className="audience-why__copy">
                     <span className="audience-why__item-title">{moment.title}</span>

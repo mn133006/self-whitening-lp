@@ -1,0 +1,8 @@
+# Netlify / Cloudflare Pages 等で配信する場合のキャッシュ方針。
+# ハッシュ付きバンドルは長期キャッシュ、入口 HTML は毎回検証（更新が反映されない対策）。
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  Cache-Control: public, max-age=0, must-revalidate
