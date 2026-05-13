@@ -31,21 +31,38 @@ export function StoreInfo() {
               <FranchiseBrand size="sm" className="franchise-brand--store" />
             </div>
           </div>
-          <p className="store__address">
-            〒869-0532
-            <br />
-            熊本県宇城市松橋町久具301-2
-          </p>
-          <p className="store__text lp-body">
-            営業時間 10:00〜20:00／予約優先・不定休
-          </p>
-          <p className="store__text lp-body">
-            JR松橋駅より徒歩約15分。
-            上記住所をナビに入力いただくとスムーズです。
-          </p>
-          <p className="store__text lp-body">駐車12台。バス停（松橋高校前）は目の前です。</p>
+          <dl className="store__info">
+            <div className="store__info-row">
+              <dt className="store__info-label">住所</dt>
+              <dd className="store__info-value">
+                <span className="store__info-postal">〒869-0532</span>
+                <span className="store__info-address">熊本県宇城市松橋町久具301-2</span>
+              </dd>
+            </div>
+            <div className="store__info-row">
+              <dt className="store__info-label">営業時間</dt>
+              <dd className="store__info-value">
+                <span>10:00〜20:00</span>
+                <span className="store__info-sub">予約優先・不定休</span>
+              </dd>
+            </div>
+            <div className="store__info-row">
+              <dt className="store__info-label">アクセス</dt>
+              <dd className="store__info-value">
+                <span>JR松橋駅より徒歩約15分</span>
+                <span className="store__info-sub">上記住所をナビに入力いただくとスムーズです</span>
+              </dd>
+            </div>
+            <div className="store__info-row">
+              <dt className="store__info-label">駐車場</dt>
+              <dd className="store__info-value">
+                <span>12台</span>
+                <span className="store__info-sub">バス停（松橋高校前）は目の前です</span>
+              </dd>
+            </div>
+          </dl>
           <p className="store__text store__text--note lp-caption">
-            営業時間・定休日は変更となる場合があります。LINEにてご確認ください。
+            ※営業時間・定休日は変更となる場合があります。最新情報はLINEにてご確認ください。
           </p>
           <div className="store__line" id="line">
             <CTAButton
