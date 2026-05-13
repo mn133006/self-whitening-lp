@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && node scripts/sync-signage-dist.mjs",
+    "pricing-intro-svg": "node scripts/embed-pricing-intro-card-svg.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "signage": "node scripts/signage-server.mjs",
