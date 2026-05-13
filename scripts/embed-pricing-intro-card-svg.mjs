@@ -15,26 +15,35 @@ const outPath = join(root, "public", "pricing-intro-card-full.svg");
 const webp = readFileSync(webpPath);
 const dataUri = `data:image/webp;base64,${webp.toString("base64")}`;
 
+// Layout: 1200 x 540 (wide, low) so the card fits on one mobile row without text wrap.
+const FONT = 'system-ui, -apple-system, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Noto Sans JP&quot;, Meiryo, sans-serif';
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="800" viewBox="0 0 1200 800" lang="ja">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="540" viewBox="0 0 1200 540" lang="ja">
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="rgb(239,246,255)" stop-opacity="0.98"/>
       <stop offset="55%" stop-color="#ffffff"/>
     </linearGradient>
+    <clipPath id="cardClip">
+      <rect x="2" y="2" width="1196" height="536" rx="22" ry="22"/>
+    </clipPath>
   </defs>
-  <rect x="2" y="2" width="1196" height="794" rx="20" ry="20" fill="url(#cardBg)" stroke="rgb(59,130,246)" stroke-opacity="0.45" stroke-width="4"/>
-  <rect x="48" y="52" width="268" height="44" rx="22" fill="rgb(255,255,255)" stroke="rgb(59,130,246)" stroke-opacity="0.22" stroke-width="1.5"/>
-  <text x="182" y="80" text-anchor="middle" font-family="system-ui, -apple-system, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Noto Sans JP&quot;, Meiryo, sans-serif" font-size="22" font-weight="600" fill="rgb(30,64,175)">初回限定 / 体験価格</text>
-  <text x="48" y="168" font-family="system-ui, -apple-system, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Noto Sans JP&quot;, Meiryo, sans-serif" font-size="34" font-weight="700" fill="rgb(15,23,42)">初回体験</text>
-  <text x="48" y="228" font-family="system-ui, -apple-system, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Noto Sans JP&quot;, Meiryo, sans-serif" font-size="26" fill="rgb(100,116,139)">4,900円</text>
-  <text x="148" y="228" font-family="system-ui, -apple-system, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Noto Sans JP&quot;, Meiryo, sans-serif" font-size="26" fill="rgb(100,116,139)">→</text>
-  <text x="196" y="236" font-family="system-ui, -apple-system, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Noto Sans JP&quot;, Meiryo, sans-serif" font-size="56" font-weight="800" fill="rgb(37,99,235)">1,900円</text>
-  <rect x="44" y="288" width="620" height="108" rx="54" fill="rgb(219,234,254)" stroke="rgb(147,197,253)" stroke-opacity="0.6" stroke-width="1.5"/>
-  <text x="64" y="338" font-family="system-ui, -apple-system, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Noto Sans JP&quot;, Meiryo, sans-serif" font-size="26" font-weight="600" fill="rgb(30,58,138)">所要時間：目安60分</text>
-  <text x="64" y="378" font-family="system-ui, -apple-system, &quot;Hiragino Sans&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Noto Sans JP&quot;, Meiryo, sans-serif" font-size="26" font-weight="600" fill="rgb(30,58,138)">（カウンセリング込み）</text>
-  <line x1="708" y1="40" x2="708" y2="760" stroke="rgb(59,130,246)" stroke-opacity="0.14" stroke-width="1"/>
-  <image xlink:href="${dataUri}" href="${dataUri}" x="708" y="2" width="488" height="794" preserveAspectRatio="xMidYMid slice"/>
+  <g clip-path="url(#cardClip)">
+    <rect x="0" y="0" width="1200" height="540" fill="url(#cardBg)"/>
+    <image xlink:href="${dataUri}" href="${dataUri}" x="780" y="0" width="420" height="540" preserveAspectRatio="xMidYMid slice"/>
+    <line x1="780" y1="32" x2="780" y2="508" stroke="rgb(59,130,246)" stroke-opacity="0.14" stroke-width="1"/>
+  </g>
+  <rect x="2" y="2" width="1196" height="536" rx="22" ry="22" fill="none" stroke="rgb(59,130,246)" stroke-opacity="0.45" stroke-width="4"/>
+  <rect x="56" y="56" width="304" height="56" rx="28" fill="rgb(255,255,255)" stroke="rgb(59,130,246)" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="208" y="92" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="600" fill="rgb(30,64,175)">初回限定 / 体験価格</text>
+  <text x="56" y="232" font-family="${FONT}" font-size="44" font-weight="700" fill="rgb(15,23,42)">初回体験</text>
+  <g font-family="${FONT}" font-weight="700">
+    <text x="248" y="232" font-size="34" fill="rgb(100,116,139)" text-decoration="line-through">4,900円</text>
+    <text x="408" y="232" font-size="34" fill="rgb(100,116,139)">→</text>
+    <text x="464" y="240" font-size="64" font-weight="800" fill="rgb(37,99,235)">1,900円</text>
+  </g>
+  <rect x="56" y="304" width="664" height="72" rx="36" fill="rgb(219,234,254)" stroke="rgb(147,197,253)" stroke-opacity="0.7" stroke-width="1.5"/>
+  <text x="388" y="350" text-anchor="middle" font-family="${FONT}" font-size="28" font-weight="600" fill="rgb(30,58,138)">所要時間：目安60分（カウンセリング込み）</text>
 </svg>
 `;
 
