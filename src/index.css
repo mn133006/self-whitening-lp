@@ -311,3 +311,19 @@ h3 {
 .u-rhythm {
   text-wrap: wrap;
 }
+
+/* 〜639px だけ改行を入れたいとき（<br class="br-sm-only">） */
+.br-sm-only {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  br.br-sm-only {
+    display: revert;
+  }
+}
+
+/* 短い語をまとめて折り禁止（単語途中の改行を抑える） */
+.jp-nowrap-phrase {
+  white-space: nowrap;
+}

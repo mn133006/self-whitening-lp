@@ -10,6 +10,8 @@
   margin: 0 auto;
   text-align: center;
   color: var(--color-muted);
+  text-wrap: wrap;
+  overflow-wrap: normal;
 }
 
 .diagnosis__grid {
@@ -85,6 +87,38 @@
 
 .diagnosis__guide-body {
   margin-top: var(--space-8);
+}
+
+@media (max-width: 639px) {
+  .diagnosis .lp-card {
+    padding: 1rem;
+  }
+
+  .diagnosis__card-title {
+    align-items: flex-start;
+    font-size: 0.92rem;
+    line-height: 1.38;
+    gap: 0.4025rem;
+  }
+
+  .diagnosis__card-title svg {
+    flex-shrink: 0;
+    margin-top: 0.08em;
+  }
+
+  .diagnosis__list li {
+    font-size: 0.875rem;
+    line-height: 1.62;
+    text-wrap: wrap;
+    overflow-wrap: normal;
+  }
+
+  .diagnosis__guide-body.lp-body {
+    font-size: 0.905rem;
+    line-height: 1.62;
+    text-wrap: wrap;
+    overflow-wrap: normal;
+  }
 }
 
 @media (min-width: 900px) {

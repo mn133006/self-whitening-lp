@@ -24,9 +24,13 @@ export function WhiteningDiagnosis() {
           あなたに合うホワイトニング診断
         </h2>
         <p className="diagnosis__lead lp-body u-measure">
-          どのホワイトニングが自分に合っているか不安な方へ。
+          どのホワイトニングが
+          <br className="br-sm-only" aria-hidden="true" />
+          自分に合っているか不安な方へ。
           <br />
-          ご希望の白さや現在の歯の状態に合わせて、最適な方法をご提案します。
+          ご希望の白さや現在の歯の状態に合わせて、
+          <br className="br-sm-only" aria-hidden="true" />
+          最適な方法をご提案します。
         </p>
 
         <div className="diagnosis__grid">
@@ -45,7 +49,11 @@ export function WhiteningDiagnosis() {
           <article className="diagnosis__card lp-card" aria-label="歯科提携ホワイトニングがおすすめの方">
             <h3 className="diagnosis__card-title">
               <ShieldCheck size={18} aria-hidden="true" />
-              <span>歯科提携ホワイトニングがおすすめの方</span>
+              <span>
+                歯科提携ホワイトニングがおすすめ
+                <br className="br-sm-only" aria-hidden="true" />
+                の方
+              </span>
             </h3>
             <ul className="diagnosis__list">
               {MEDICAL_POINTS.map((point) => (

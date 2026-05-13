@@ -1,4 +1,19 @@
 import './BeforeAfter.css';
+import type { ReactNode } from 'react';
+
+/** 「気になり始めた」など、語の途中で縦に割かれやすい語をまとめる */
+function formatStoryLine(line: string): ReactNode {
+  const m = line.match(/^(.*黄ばみが)(気になり始めた)$/);
+  if (m) {
+    return (
+      <>
+        {m[1]}
+        <span className="jp-nowrap-phrase">{m[2]}</span>
+      </>
+    );
+  }
+  return line;
+}
 
 type CaseMeta = {
   src: string;
@@ -78,7 +93,7 @@ export function BeforeAfter() {
               <ul className="before-after__story">
                 {c.story.map((line, i) => (
                   <li key={i} className="before-after__story-line lp-caption">
-                    ・{line}
+                    ・{formatStoryLine(line)}
                   </li>
                 ))}
               </ul>

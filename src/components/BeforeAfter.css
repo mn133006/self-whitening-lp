@@ -159,6 +159,30 @@
 .before-after__story-line {
   margin: 0.15rem 0 0;
   text-align: left;
+  text-wrap: wrap;
+  overflow-wrap: normal;
+}
+
+@media (max-width: 639px) {
+  .before-after__item {
+    padding: 1rem;
+  }
+
+  .before-after__attr {
+    font-size: 0.905rem;
+    line-height: 1.42;
+    text-wrap: wrap;
+    overflow-wrap: normal;
+  }
+
+  .before-after__story-line {
+    font-size: 0.855rem;
+    line-height: 1.62;
+  }
+
+  .before-after__result {
+    font-size: 0.845rem;
+  }
 }
 
 .before-after__result {
