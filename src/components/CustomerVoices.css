@@ -54,14 +54,6 @@
   filter: drop-shadow(0 1px 0 var(--color-border));
 }
 
-.voices__stars {
-  margin: 0 0 0.65rem;
-  font-size: 1rem;
-  line-height: 1;
-  letter-spacing: 0.08em;
-  color: rgb(234 179 8);
-}
-
 .voices__quote {
   display: flex;
   flex-direction: column;

@@ -29,14 +29,6 @@ const VOICES: Voice[] = [
   },
 ];
 
-function Stars() {
-  return (
-    <p className="voices__stars" aria-label="5段階評価で5">
-      {'★★★★★'}
-    </p>
-  );
-}
-
 export function CustomerVoices() {
   return (
     <section className="voices lp-section lp-section--tint" aria-labelledby="voices-title" id="customer-voices">
@@ -49,7 +41,6 @@ export function CustomerVoices() {
           {VOICES.map((v) => (
             <li key={v.id} className="voices__item">
               <blockquote className="voices__bubble">
-                <Stars />
                 <div className="voices__quote">
                   {v.paragraphs.map((text) => (
                     <p key={text} className="voices__quote-p">
