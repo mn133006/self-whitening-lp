@@ -1,13 +1,32 @@
 import './CustomerVoices.css';
 
 type Voice = {
-  quote: string;
+  id: string;
+  paragraphs: [string, string];
 };
 
 const VOICES: Voice[] = [
-  { quote: '初めてでしたが、説明が丁寧で安心して受けられました。' },
-  { quote: '1回でも口元がすっきりした感じがして嬉しかったです。' },
-  { quote: 'セルフでも思ったより簡単で、気軽に続けられそうです。' },
+  {
+    id: 'v1',
+    paragraphs: [
+      '初めてのホワイトニングで少し緊張していましたが、最初に丁寧に説明していただけたので安心して受けられました。',
+      '無理に勧められることもなく、自分に合った方法を相談できたのが良かったです。',
+    ],
+  },
+  {
+    id: 'v2',
+    paragraphs: [
+      '1回でも口元がすっきりした感じがあり、鏡を見るのが少し楽しみになりました。',
+      '初回料金も試しやすく、気軽に始められたのが良かったです。',
+    ],
+  },
+  {
+    id: 'v3',
+    paragraphs: [
+      'セルフホワイトニングは難しいイメージがありましたが、実際はとても簡単でした。',
+      '美容と医療の違いまで分かりやすく説明してもらえて、安心して続けられそうです。',
+    ],
+  },
 ];
 
 function Stars() {
@@ -28,10 +47,16 @@ export function CustomerVoices() {
 
         <ul className="voices__list">
           {VOICES.map((v) => (
-            <li key={v.quote} className="voices__item">
+            <li key={v.id} className="voices__item">
               <blockquote className="voices__bubble">
                 <Stars />
-                <p className="voices__quote">{v.quote}</p>
+                <div className="voices__quote">
+                  {v.paragraphs.map((text) => (
+                    <p key={text} className="voices__quote-p">
+                      {text}
+                    </p>
+                  ))}
+                </div>
               </blockquote>
             </li>
           ))}
