@@ -91,6 +91,11 @@
   line-height: 1.5;
 }
 
+.cta-block--inverse .cta-block__reason,
+.cta-block--inverse .cta-block__urgency {
+  text-align: center;
+}
+
 .cta-block--inverse .cta-block__reason {
   color: rgba(255, 255, 255, 0.92);
 }
