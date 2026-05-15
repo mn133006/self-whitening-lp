@@ -132,10 +132,11 @@ export function Pricing() {
             <p className="pricing__phase-step">1. さらに白さを求める方向け</p>
             <div className="pricing__card pricing__card--medical">
               <ul className="pricing__vertical-list">
-                <li className="pricing__line-item pricing__line-item--medical">
+                <li className="pricing__line-item pricing__line-item--medical pricing__line-item--medical-single">
                   <span className="pricing__name">歯科提携ホワイトニング（単回）</span>
                   <span className="pricing__amount">7,900円</span>
-                  <span className="pricing__per-price">所要時間：目安60分</span>
+                  <span className="pricing__irradiation-note">たっぷり45分照射（15分×3セット）</span>
+                  <span className="pricing__duration pricing__duration--medical-inline">所要時間：目安60分</span>
                 </li>
               </ul>
               <div className="pricing__medical-plan">
@@ -145,20 +146,26 @@ export function Pricing() {
                     <span className="pricing__name">3回</span>
                     <span className="pricing__total-price">18,000円</span>
                     <span className="pricing__per-price">1回あたり 6,000円</span>
+                    <span className="pricing__irradiation-note pricing__irradiation-note--compact">たっぷり45分照射</span>
                   </li>
                   <li className="pricing__line-item pricing__line-item--medical">
                     <span className="pricing__name">5回</span>
                     <span className="pricing__total-price">27,500円</span>
                     <span className="pricing__per-price">1回あたり 5,500円</span>
+                    <span className="pricing__irradiation-note pricing__irradiation-note--compact">たっぷり45分照射</span>
                   </li>
                   <li className="pricing__line-item pricing__line-item--medical">
                     <span className="pricing__name">10回</span>
                     <span className="pricing__total-price">49,000円</span>
                     <span className="pricing__per-price">1回あたり 4,900円</span>
+                    <span className="pricing__irradiation-note pricing__irradiation-note--compact">たっぷり45分照射</span>
                   </li>
                 </ul>
                 <p className="pricing__duration pricing__duration--option">所要時間：目安60分／回</p>
               </div>
+              <p className="pricing__irradiation-explain lp-caption">
+                1回の施術では15分照射を3セット行います。しっかり時間をかけてケアしたい方におすすめです。
+              </p>
               <ul className="pricing__notes">
                 <li>提携歯科と連携したホワイトニングです</li>
                 <li>初回はオンライン診療・専用ジェルの別途費用が必要です</li>

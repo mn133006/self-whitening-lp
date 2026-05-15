@@ -97,14 +97,18 @@
 /* 短文・ラベル：行の段差を抑える（pretty → 未対応は balance） */
 .pricing .pricing__subcaption,
 .pricing .pricing__duration,
-.pricing .pricing__per-price {
+.pricing .pricing__per-price,
+.pricing .pricing__irradiation-note,
+.pricing .pricing__irradiation-explain {
   text-wrap: pretty;
 }
 
 @supports not (text-wrap: pretty) {
   .pricing .pricing__subcaption,
   .pricing .pricing__duration,
-  .pricing .pricing__per-price {
+  .pricing .pricing__per-price,
+  .pricing .pricing__irradiation-note,
+  .pricing .pricing__irradiation-explain {
     text-wrap: balance;
   }
 }
@@ -567,6 +571,44 @@
 .pricing__line-item--medical {
   background: rgb(255 255 255 / 0.9);
   border-color: rgb(148 163 184 / 0.4);
+}
+
+.pricing__line-item--medical .pricing__amount {
+  text-align: left;
+}
+
+.pricing__line-item--medical-single {
+  gap: 0.35rem;
+}
+
+.pricing__irradiation-note {
+  margin: 0.15rem 0 0;
+  font-size: 0.8125rem;
+  font-weight: var(--fw-heading);
+  line-height: 1.45;
+  letter-spacing: var(--ls);
+  color: var(--color-primary);
+}
+
+.pricing__irradiation-note--compact {
+  margin-top: 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.pricing__duration--medical-inline {
+  margin-top: 0.45rem;
+}
+
+.pricing__irradiation-explain {
+  margin: 0.75rem 0 0;
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  background: rgb(239 246 255 / 0.55);
+  border: 1px solid rgb(59 130 246 / 0.15);
+  color: var(--color-muted);
+  line-height: 1.6;
+  text-align: left;
 }
 
 .pricing__medical-plan {
