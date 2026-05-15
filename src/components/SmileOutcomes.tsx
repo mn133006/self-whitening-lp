@@ -1,4 +1,5 @@
 import { Camera, Sparkles, Smile } from 'lucide-react';
+import { LINE_RESERVE_URL } from '../config/links';
 import './SmileOutcomes.css';
 
 const BENEFITS = [
@@ -25,15 +26,17 @@ export function SmileOutcomes() {
         </h2>
 
         <div className="soutcomes__hero">
-          <img
-            className="soutcomes__hero-img"
-            src="/clear-routine-lp-banner.png"
-            alt="自然な笑顔のイメージ。CLEAR ROUTINE のトーンに合わせたビジュアル。"
-            width={1024}
-            height={682}
-            loading="lazy"
-            decoding="async"
-          />
+          <a className="soutcomes__hero-link" href={LINE_RESERVE_URL} aria-label="LINEで予約する">
+            <img
+              className="soutcomes__hero-img"
+              src="/clear-routine-lp-banner.png"
+              alt="CLEAR ROUTINE 白い歯で、自然な自信を。初回体験1,900円。今すぐ予約する"
+              width={1024}
+              height={682}
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
         </div>
 
         <ul className="soutcomes__points">
