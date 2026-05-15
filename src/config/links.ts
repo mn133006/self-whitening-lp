@@ -17,4 +17,8 @@ function resolveLineUrl(): string {
 
 export const LINE_RESERVE_URL = resolveLineUrl();
 
+/** 店舗電話（表示用ハイフンあり / tel: は数字のみ） */
+export const STORE_PHONE_DISPLAY = '070-6605-6322';
+export const STORE_PHONE_TEL = 'tel:07066056322';
+
 export const FORM_RESERVE_URL = 'https://example.com/booking-form';

@@ -134,6 +134,21 @@
   text-align: center;
 }
 
+.store__tel {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.store__tel:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .store__maplink {
   font-family: var(--font-sans);
   font-size: 0.9375rem;

@@ -1,4 +1,4 @@
-import { LINE_RESERVE_URL } from '../config/links';
+import { LINE_RESERVE_URL, STORE_PHONE_DISPLAY, STORE_PHONE_TEL } from '../config/links';
 import { storeMapsEmbedSrc, storeMapsOpenUrl } from '../config/storeMap';
 import { CTAButton } from './CTAButton';
 import { FranchiseBrand } from './FranchiseBrand';
@@ -37,6 +37,17 @@ export function StoreInfo() {
               <dd className="store__info-value">
                 <span className="store__info-postal">〒869-0532</span>
                 <span className="store__info-address">熊本県宇城市松橋町久具301-2</span>
+              </dd>
+            </div>
+            <div className="store__info-row">
+              <dt className="store__info-label">電話</dt>
+              <dd className="store__info-value">
+                <a className="store__tel" href={STORE_PHONE_TEL}>
+                  {STORE_PHONE_DISPLAY}
+                </a>
+                <span className="store__info-sub">
+                  ご予約・空き確認はLINEがスムーズです。施術中はお電話に出られない場合があります。
+                </span>
               </dd>
             </div>
             <div className="store__info-row">

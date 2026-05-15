@@ -16,7 +16,7 @@ import { WhiteningSteps } from './components/WhiteningSteps';
 import { WhiteningDiagnosis } from './components/WhiteningDiagnosis';
 import { StickyCTA } from './components/StickyCTA';
 import { StoreInfo } from './components/StoreInfo';
-import { LINE_RESERVE_URL } from './config/links';
+import { LINE_RESERVE_URL, STORE_PHONE_DISPLAY, STORE_PHONE_TEL } from './config/links';
 import { bindHashFragmentScroll, scrollToHashTarget } from './scrollToHash';
 import './App.css';
 
@@ -68,6 +68,13 @@ function App() {
         <p className="site-footer__meta">
           <a className="site-footer__link" href={LINE_RESERVE_URL}>
             LINE公式アカウント
+          </a>
+          <span className="site-footer__sep" aria-hidden="true">
+            {' '}
+            ·{' '}
+          </span>
+          <a className="site-footer__link" href={STORE_PHONE_TEL}>
+            {STORE_PHONE_DISPLAY}
           </a>
         </p>
         <p className="site-footer__text">© {new Date().getFullYear()} CLEAR ROUTINE</p>
