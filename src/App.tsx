@@ -1,6 +1,5 @@
 import { useEffect, useLayoutEffect } from 'react';
 import { SalonDifference } from './components/SalonDifference';
-import { ConversionProofBeforeAfter } from './components/ConversionProofBeforeAfter';
 import { CustomerVoices } from './components/CustomerVoices';
 import { SmileOutcomes } from './components/SmileOutcomes';
 import { BeforeAfter } from './components/BeforeAfter';
@@ -52,7 +51,6 @@ function App() {
         <Hero />
         <SalonDifference />
         <WhiteningDiagnosis />
-        <ConversionProofBeforeAfter />
         <Pricing />
         <CustomerVoices />
         <SmileOutcomes />

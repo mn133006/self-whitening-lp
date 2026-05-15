@@ -72,6 +72,11 @@ export function BeforeAfter() {
           <span className="lp-h2__ja">ビフォーアフター・変化の比較</span>
         </h2>
 
+        <p className="before-after__hook">実際に、ここまで印象が変わります。</p>
+        <p className="before-after__intro-lead lp-body u-measure">
+          歯の色が明るくなることで、笑顔の印象や清潔感に違いが生まれます。
+        </p>
+
         <ul className="before-after__list">
           {CASES.map((c) => (
             <li
