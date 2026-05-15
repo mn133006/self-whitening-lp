@@ -573,10 +573,6 @@
   border-color: rgb(148 163 184 / 0.4);
 }
 
-.pricing__line-item--medical .pricing__amount {
-  text-align: left;
-}
-
 .pricing__line-item--medical-single {
   gap: 0.35rem;
 }
